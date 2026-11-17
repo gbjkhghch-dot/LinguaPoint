@@ -1,1 +1,37 @@
-<div class="cards">{% for group in groups %}<article class="course-card"><div class="course-top"><span class="tag">{{ group.language.name }}</span><span class="tag muted">{{ group.level.code }}</span></div><h2><a href="{% url 'course' group.pk %}">{{ group.title|truncatechars:65 }}</a></h2><p class="muted">Старт: {{ group.start_date|date:'d E Y' }}</p><p class="muted">Свободных мест: {{ group.capacity|floatformat:0 }} всего · занято {{ group.occupied|default:0 }}</p><a class="btn btn-outline" href="{% url 'course' group.pk %}">Подробнее о курсе</a></article>{% empty %}<p class="empty">Курсы не найдены. Попробуйте изменить фильтры.</p>{% endfor %}</div>
+
+<div class="cards">
+    {% for group in groups %}
+        <article class="course-card">
+            <div class="course-top">
+                <span class="tag">{{ group.language.name }}</span>
+                <span class="tag muted">{{ group.level.code }}</span>
+            </div>
+
+            <h2>
+                <a href="{% url 'course' group.pk %}">
+                    {{ group.title|truncatechars:65 }}
+                </a>
+            </h2>
+
+            <p class="muted">
+                Старт: {{ group.start_date|date:'d E Y' }}
+            </p>
+
+            <p class="muted">
+                Свободных мест: {{ group.capacity|floatformat:0 }} всего
+                · занято {{ group.occupied|default:0 }}
+            </p>
+
+            <a
+                class="btn btn-outline"
+                href="{% url 'course' group.pk %}"
+            >
+                Подробнее о курсе
+            </a>
+        </article>
+    {% empty %}
+        <p class="empty">
+            Курсы не найдены. Попробуйте изменить фильтры.
+        </p>
+    {% endfor %}
+</div>

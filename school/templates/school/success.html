@@ -1,1 +1,40 @@
-{% extends 'school/base.html' %}{% block content %}<section class="container narrow section success"><div class="success-icon">✓</div><h1>{{ heading }}</h1>{% if application %}<p class="lead">Номер вашей заявки: <strong>{{ application }}</strong></p>{% endif %}<p>Спасибо за интерес к нашим курсам!</p><a class="btn" href="{% url 'catalog' %}">Вернуться к курсам</a></section>{% endblock %}
+
+{% extends 'school/base.html' %}
+
+{% block content %}
+
+<section class="container narrow section success">
+
+    <!-- Иконка успешной отправки -->
+    <div class="success-icon">
+        ✓
+    </div>
+
+    <h1>
+        {{ heading }}
+    </h1>
+
+    {% if application %}
+        <p class="lead">
+            Номер вашей заявки:
+
+            <strong>
+                {{ application }}
+            </strong>
+        </p>
+    {% endif %}
+
+    <p>
+        Спасибо за интерес к нашим курсам!
+    </p>
+
+    <a
+        class="btn"
+        href="{% url 'catalog' %}"
+    >
+        Вернуться к курсам
+    </a>
+
+</section>
+
+{% endblock %}

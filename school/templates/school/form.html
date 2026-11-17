@@ -1,1 +1,68 @@
-{% extends 'school/base.html' %}{% block content %}<div class="container narrow section"><nav class="breadcrumbs"><a href="{% url 'home' %}">Главная</a> / {{ heading }}</nav><h1>{{ heading }}</h1>{% if group %}<p class="lead">{{ group.title }}</p>{% endif %}<div class="form-panel"><form method="post" class="validated-form">{% csrf_token %}{% include 'school/_fields.html' %}<button class="btn btn-accent" type="submit">{% if group %}Отправить заявку{% else %}Продолжить{% endif %}</button></form></div>{% if heading == 'Вход' %}<p>Нет аккаунта? <a href="{% url 'register' %}">Зарегистрируйтесь</a></p>{% endif %}</div>{% endblock %}
+
+{% extends 'school/base.html' %}
+
+{% block content %}
+
+<div class="container narrow section">
+
+    <!-- Хлебные крошки -->
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="{% url 'home' %}">
+            Главная
+        </a>
+
+        /
+
+        {{ heading }}
+    </nav>
+
+    <h1>
+        {{ heading }}
+    </h1>
+
+    {% if group %}
+        <p class="lead">
+            {{ group.title }}
+        </p>
+    {% endif %}
+
+    <!-- Форма -->
+    <div class="form-panel">
+
+        <form
+            method="post"
+            class="validated-form"
+        >
+            {% csrf_token %}
+
+            {% include 'school/_fields.html' %}
+
+            <button
+                class="btn btn-accent"
+                type="submit"
+            >
+                {% if group %}
+                    Отправить заявку
+                {% else %}
+                    Продолжить
+                {% endif %}
+            </button>
+
+        </form>
+
+    </div>
+
+    <!-- Ссылка на регистрацию -->
+    {% if heading == 'Вход' %}
+        <p>
+            Нет аккаунта?
+
+            <a href="{% url 'register' %}">
+                Зарегистрируйтесь
+            </a>
+        </p>
+    {% endif %}
+
+</div>
+
+{% endblock %}

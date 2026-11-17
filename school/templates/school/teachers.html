@@ -1,1 +1,56 @@
-{% extends 'school/base.html' %}{% block content %}<section class="page-hero"><div class="container"><h1>Наши преподаватели</h1><p>Опытные наставники помогут вам двигаться вперёд.</p></div></section><div class="container section"><div class="cards">{% for teacher in teachers %}<article class="course-card"><span class="teacher-avatar" aria-hidden="true">✦</span><h2>{{ teacher.full_name }}</h2><p>Преподаватель языковой школы</p></article>{% empty %}<p>Преподаватели пока не добавлены.</p>{% endfor %}</div></div>{% endblock %}
+
+{% extends 'school/base.html' %}
+
+{% block content %}
+
+<!-- Заголовок страницы -->
+<section class="page-hero">
+    <div class="container">
+
+        <h1>
+            Наши преподаватели
+        </h1>
+
+        <p>
+            Опытные наставники помогут вам двигаться вперёд.
+        </p>
+
+    </div>
+</section>
+
+<!-- Список преподавателей -->
+<div class="container section">
+
+    <div class="cards">
+
+        {% for teacher in teachers %}
+            <article class="course-card">
+
+                <span
+                    class="teacher-avatar"
+                    aria-hidden="true"
+                >
+                    ✦
+                </span>
+
+                <h2>
+                    {{ teacher.full_name }}
+                </h2>
+
+                <p>
+                    Преподаватель языковой школы
+                </p>
+
+            </article>
+
+        {% empty %}
+            <p>
+                Преподаватели пока не добавлены.
+            </p>
+        {% endfor %}
+
+    </div>
+
+</div>
+
+{% endblock %}

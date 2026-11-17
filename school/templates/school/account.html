@@ -1,1 +1,47 @@
-{% extends 'school/base.html' %}{% block content %}<div class="container section"><h1>Личный кабинет</h1><div class="account-grid"><aside class="account-sidebar"><strong>{{ user.username }}</strong><p>{{ user.email }}</p><a href="#profile">Мой профиль</a><a href="#applications">Мои заявки</a></aside><div><section class="form-panel" id="profile"><h2>Профиль</h2><form method="post" class="validated-form">{% csrf_token %}{% include 'school/_fields.html' %}<button class="btn" type="submit">Сохранить</button></form></section><section class="section" id="applications"><h2>Мои заявки</h2>{% for item in applications %}<article class="application-row"><strong>{{ item.group.title }}</strong><span>{{ item.created_at|date:'d.m.Y' }}</span><span>{{ item }}</span></article>{% empty %}<p>Вы ещё не подавали заявки.</p>{% endfor %}</section></div></div></div>{% endblock %}
+
+{% extends 'school/base.html' %}
+
+{% block content %}
+<div class="container section">
+    <h1>Личный кабинет</h1>
+
+    <div class="account-grid">
+        <aside class="account-sidebar">
+            <strong>{{ user.username }}</strong>
+            <p>{{ user.email }}</p>
+
+            <a href="#profile">Мой профиль</a>
+            <a href="#applications">Мои заявки</a>
+        </aside>
+
+        <div>
+            <section class="form-panel" id="profile">
+                <h2>Профиль</h2>
+
+                <form method="post" class="validated-form">
+                    {% csrf_token %}
+                    {% include 'school/_fields.html' %}
+
+                    <button class="btn" type="submit">
+                        Сохранить
+                    </button>
+                </form>
+            </section>
+
+            <section class="section" id="applications">
+                <h2>Мои заявки</h2>
+
+                {% for item in applications %}
+                    <div class="application-row">
+                        <strong>{{ item.group.title }}</strong>
+                        <span>{{ item.created_at|date:'d.m.Y' }}</span>
+                        <span>{{ item }}</span>
+                    </div>
+                {% empty %}
+                    <p>Вы ещё не подавали заявки.</p>
+                {% endfor %}
+            </section>
+        </div>
+    </div>
+</div>
+{% endblock %}

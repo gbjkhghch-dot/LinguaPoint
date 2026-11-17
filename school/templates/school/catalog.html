@@ -1,1 +1,182 @@
-{% extends 'school/base.html' %}{% block title %}Каталог курсов — LinguaPoint{% endblock %}{% block content %}<section class="page-hero"><div class="container"><span class="eyebrow">Учитесь в своём темпе</span><h1>{% if search_page %}Результаты поиска{% else %}Каталог курсов{% endif %}</h1><p>Найдите группу по языку, уровню и названию.</p></div></section><div class="container section"><form class="filters" method="get" action="{% if search_page %}{% url 'search' %}{% else %}{% url 'catalog' %}{% endif %}" id="catalog-filter" data-api-url="{% url 'courses_api' %}" data-course-url-template="{% url 'course' 999999 %}"><label>Поиск<input name="q" value="{{ filters.q }}" placeholder="Название курса" type="search"></label><label>Язык<select name="language"><option value="">Все языки</option>{% for language in languages %}<option value="{{ language.code }}" {% if filters.language == language.code %}selected{% endif %}>{{ language.name }}</option>{% endfor %}</select></label><label>Уровень<select name="level"><option value="">Все уровни</option><option value="A1" {% if filters.level == 'A1' %}selected{% endif %}>A1</option><option value="A2" {% if filters.level == 'A2' %}selected{% endif %}>A2</option><option value="B1" {% if filters.level == 'B1' %}selected{% endif %}>B1</option><option value="B2" {% if filters.level == 'B2' %}selected{% endif %}>B2</option><option value="C1" {% if filters.level == 'C1' %}selected{% endif %}>C1</option></select></label><button class="btn" type="submit">Найти</button><a href="{% url 'catalog' %}">Сбросить</a></form><p id="live-status" class="muted" aria-live="polite"></p><div id="live-results" aria-live="polite"></div><div id="server-results">{% include 'school/_cards.html' with groups=page_obj %}</div><nav class="pagination" aria-label="Страницы каталога">{% if page_obj.has_previous %}<a href="?q={{ filters.q|urlencode }}&language={{ filters.language|urlencode }}&level={{ filters.level|urlencode }}&page={{ page_obj.previous_page_number }}">← Назад</a>{% endif %}<span>Страница {{ page_obj.number }} из {{ page_obj.paginator.num_pages }}</span>{% if page_obj.has_next %}<a href="?q={{ filters.q|urlencode }}&language={{ filters.language|urlencode }}&level={{ filters.level|urlencode }}&page={{ page_obj.next_page_number }}">Далее →</a>{% endif %}</nav></div>{% endblock %}
+
+{% extends 'school/base.html' %}
+
+{% block title %}
+    Каталог курсов — LinguaPoint
+{% endblock %}
+
+{% block content %}
+
+<!-- Заголовок страницы -->
+<section class="page-hero">
+    <div class="container">
+        <span class="eyebrow">
+            Учитесь в своём темпе
+        </span>
+
+        <h1>
+            {% if search_page %}
+                Результаты поиска
+            {% else %}
+                Каталог курсов
+            {% endif %}
+        </h1>
+
+        <p>
+            Найдите группу по языку, уровню и названию.
+        </p>
+    </div>
+</section>
+
+<!-- Каталог и фильтры -->
+<div class="container section">
+
+    <form
+        class="filters"
+        method="get"
+        action="{% if search_page %}{% url 'search' %}{% else %}{% url 'catalog' %}{% endif %}"
+        id="catalog-filter"
+        data-api-url="{% url 'courses_api' %}"
+        data-course-url-template="{% url 'course' 999999 %}"
+    >
+
+        <!-- Поиск по названию -->
+        <label>
+            Поиск
+
+            <input
+                name="q"
+                value="{{ filters.q }}"
+                placeholder="Название курса"
+                type="search"
+            >
+        </label>
+
+        <!-- Фильтр по языку -->
+        <label>
+            Язык
+
+            <select name="language">
+                <option value="">
+                    Все языки
+                </option>
+
+                {% for language in languages %}
+                    <option
+                        value="{{ language.code }}"
+                        {% if filters.language == language.code %}
+                            selected
+                        {% endif %}
+                    >
+                        {{ language.name }}
+                    </option>
+                {% endfor %}
+            </select>
+        </label>
+
+        <!-- Фильтр по уровню -->
+        <label>
+            Уровень
+
+            <select name="level">
+                <option value="">
+                    Все уровни
+                </option>
+
+                <option
+                    value="A1"
+                    {% if filters.level == 'A1' %}selected{% endif %}
+                >
+                    A1
+                </option>
+
+                <option
+                    value="A2"
+                    {% if filters.level == 'A2' %}selected{% endif %}
+                >
+                    A2
+                </option>
+
+                <option
+                    value="B1"
+                    {% if filters.level == 'B1' %}selected{% endif %}
+                >
+                    B1
+                </option>
+
+                <option
+                    value="B2"
+                    {% if filters.level == 'B2' %}selected{% endif %}
+                >
+                    B2
+                </option>
+
+                <option
+                    value="C1"
+                    {% if filters.level == 'C1' %}selected{% endif %}
+                >
+                    C1
+                </option>
+            </select>
+        </label>
+
+        <button class="btn" type="submit">
+            Найти
+        </button>
+
+        <a href="{% url 'catalog' %}">
+            Сбросить
+        </a>
+
+    </form>
+
+    <!-- Статус динамического поиска -->
+    <p
+        id="live-status"
+        class="muted"
+        aria-live="polite"
+    ></p>
+
+    <!-- Результаты динамического поиска -->
+    <div
+        id="live-results"
+        aria-live="polite"
+    ></div>
+
+    <!-- Результаты серверной обработки -->
+    <div id="server-results">
+        {% include 'school/_cards.html' with groups=page_obj %}
+    </div>
+
+    <!-- Пагинация -->
+    <nav
+        class="pagination"
+        aria-label="Страницы каталога"
+    >
+
+        {% if page_obj.has_previous %}
+            <a
+                href="?q={{ filters.q|urlencode }}&amp;language={{ filters.language|urlencode }}&amp;level={{ filters.level|urlencode }}&amp;page={{ page_obj.previous_page_number }}"
+            >
+                ← Назад
+            </a>
+        {% endif %}
+
+        <span>
+            Страница {{ page_obj.number }}
+            из {{ page_obj.paginator.num_pages }}
+        </span>
+
+        {% if page_obj.has_next %}
+            <a
+                href="?q={{ filters.q|urlencode }}&amp;language={{ filters.language|urlencode }}&amp;level={{ filters.level|urlencode }}&amp;page={{ page_obj.next_page_number }}"
+            >
+                Далее →
+            </a>
+        {% endif %}
+
+    </nav>
+
+</div>
+
+{% endblock %}
