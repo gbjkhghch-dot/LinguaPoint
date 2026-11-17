@@ -1,0 +1,7890 @@
+[
+  {
+    "model": "school.language",
+    "pk": 1,
+    "fields": {
+      "name": "Английский",
+      "code": "en"
+    }
+  },
+  {
+    "model": "school.language",
+    "pk": 2,
+    "fields": {
+      "name": "Немецкий",
+      "code": "de"
+    }
+  },
+  {
+    "model": "school.level",
+    "pk": 1,
+    "fields": {
+      "language": 1,
+      "code": "A1",
+      "rank": 1
+    }
+  },
+  {
+    "model": "school.level",
+    "pk": 2,
+    "fields": {
+      "language": 1,
+      "code": "A2",
+      "rank": 2
+    }
+  },
+  {
+    "model": "school.level",
+    "pk": 3,
+    "fields": {
+      "language": 1,
+      "code": "B1",
+      "rank": 3
+    }
+  },
+  {
+    "model": "school.level",
+    "pk": 4,
+    "fields": {
+      "language": 1,
+      "code": "B2",
+      "rank": 4
+    }
+  },
+  {
+    "model": "school.level",
+    "pk": 5,
+    "fields": {
+      "language": 1,
+      "code": "C1",
+      "rank": 5
+    }
+  },
+  {
+    "model": "school.level",
+    "pk": 6,
+    "fields": {
+      "language": 2,
+      "code": "A1",
+      "rank": 1
+    }
+  },
+  {
+    "model": "school.level",
+    "pk": 7,
+    "fields": {
+      "language": 2,
+      "code": "A2",
+      "rank": 2
+    }
+  },
+  {
+    "model": "school.level",
+    "pk": 8,
+    "fields": {
+      "language": 2,
+      "code": "B1",
+      "rank": 3
+    }
+  },
+  {
+    "model": "school.level",
+    "pk": 9,
+    "fields": {
+      "language": 2,
+      "code": "B2",
+      "rank": 4
+    }
+  },
+  {
+    "model": "school.level",
+    "pk": 10,
+    "fields": {
+      "language": 2,
+      "code": "C1",
+      "rank": 5
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "username": "user01",
+      "password": "!",
+      "first_name": "Александр",
+      "last_name": "Иванов",
+      "email": "user01@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "full_name": "Александр Иванов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "username": "user02",
+      "password": "!",
+      "first_name": "Мария",
+      "last_name": "Иванов",
+      "email": "user02@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "full_name": "Мария Иванов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "username": "user03",
+      "password": "!",
+      "first_name": "Иван",
+      "last_name": "Иванов",
+      "email": "user03@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 3,
+    "fields": {
+      "user": 3,
+      "full_name": "Иван Иванов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+      "username": "user04",
+      "password": "!",
+      "first_name": "Анастасия",
+      "last_name": "Иванов",
+      "email": "user04@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 4,
+    "fields": {
+      "user": 4,
+      "full_name": "Анастасия Иванов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+      "username": "user05",
+      "password": "!",
+      "first_name": "Дмитрий",
+      "last_name": "Иванов",
+      "email": "user05@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 5,
+    "fields": {
+      "user": 5,
+      "full_name": "Дмитрий Иванов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 6,
+    "fields": {
+      "username": "user06",
+      "password": "!",
+      "first_name": "Елена",
+      "last_name": "Иванов",
+      "email": "user06@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 6,
+    "fields": {
+      "user": 6,
+      "full_name": "Елена Иванов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 7,
+    "fields": {
+      "username": "user07",
+      "password": "!",
+      "first_name": "Максим",
+      "last_name": "Иванов",
+      "email": "user07@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 7,
+    "fields": {
+      "user": 7,
+      "full_name": "Максим Иванов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 8,
+    "fields": {
+      "username": "user08",
+      "password": "!",
+      "first_name": "Ольга",
+      "last_name": "Иванов",
+      "email": "user08@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 8,
+    "fields": {
+      "user": 8,
+      "full_name": "Ольга Иванов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 9,
+    "fields": {
+      "username": "user09",
+      "password": "!",
+      "first_name": "Артём",
+      "last_name": "Иванов",
+      "email": "user09@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 9,
+    "fields": {
+      "user": 9,
+      "full_name": "Артём Иванов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 10,
+    "fields": {
+      "username": "user10",
+      "password": "!",
+      "first_name": "Анна",
+      "last_name": "Иванов",
+      "email": "user10@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 10,
+    "fields": {
+      "user": 10,
+      "full_name": "Анна Иванов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 11,
+    "fields": {
+      "username": "user11",
+      "password": "!",
+      "first_name": "Никита",
+      "last_name": "Иванов",
+      "email": "user11@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 11,
+    "fields": {
+      "user": 11,
+      "full_name": "Никита Иванов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 12,
+    "fields": {
+      "username": "user12",
+      "password": "!",
+      "first_name": "София",
+      "last_name": "Иванов",
+      "email": "user12@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 12,
+    "fields": {
+      "user": 12,
+      "full_name": "София Иванов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 13,
+    "fields": {
+      "username": "user13",
+      "password": "!",
+      "first_name": "Кирилл",
+      "last_name": "Петров",
+      "email": "user13@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 13,
+    "fields": {
+      "user": 13,
+      "full_name": "Кирилл Петров",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 14,
+    "fields": {
+      "username": "user14",
+      "password": "!",
+      "first_name": "Дарья",
+      "last_name": "Петров",
+      "email": "user14@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 14,
+    "fields": {
+      "user": 14,
+      "full_name": "Дарья Петров",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 15,
+    "fields": {
+      "username": "user15",
+      "password": "!",
+      "first_name": "Павел",
+      "last_name": "Петров",
+      "email": "user15@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 15,
+    "fields": {
+      "user": 15,
+      "full_name": "Павел Петров",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 16,
+    "fields": {
+      "username": "user16",
+      "password": "!",
+      "first_name": "Виктория",
+      "last_name": "Петров",
+      "email": "user16@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 16,
+    "fields": {
+      "user": 16,
+      "full_name": "Виктория Петров",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 17,
+    "fields": {
+      "username": "user17",
+      "password": "!",
+      "first_name": "Илья",
+      "last_name": "Петров",
+      "email": "user17@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 17,
+    "fields": {
+      "user": 17,
+      "full_name": "Илья Петров",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 18,
+    "fields": {
+      "username": "user18",
+      "password": "!",
+      "first_name": "Полина",
+      "last_name": "Петров",
+      "email": "user18@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 18,
+    "fields": {
+      "user": 18,
+      "full_name": "Полина Петров",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 19,
+    "fields": {
+      "username": "user19",
+      "password": "!",
+      "first_name": "Даниил",
+      "last_name": "Петров",
+      "email": "user19@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 19,
+    "fields": {
+      "user": 19,
+      "full_name": "Даниил Петров",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 20,
+    "fields": {
+      "username": "user20",
+      "password": "!",
+      "first_name": "Екатерина",
+      "last_name": "Петров",
+      "email": "user20@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 20,
+    "fields": {
+      "user": 20,
+      "full_name": "Екатерина Петров",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 21,
+    "fields": {
+      "username": "user21",
+      "password": "!",
+      "first_name": "Александр",
+      "last_name": "Петров",
+      "email": "user21@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 21,
+    "fields": {
+      "user": 21,
+      "full_name": "Александр Петров",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 22,
+    "fields": {
+      "username": "user22",
+      "password": "!",
+      "first_name": "Мария",
+      "last_name": "Петров",
+      "email": "user22@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 22,
+    "fields": {
+      "user": 22,
+      "full_name": "Мария Петров",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 23,
+    "fields": {
+      "username": "user23",
+      "password": "!",
+      "first_name": "Иван",
+      "last_name": "Петров",
+      "email": "user23@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 23,
+    "fields": {
+      "user": 23,
+      "full_name": "Иван Петров",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 24,
+    "fields": {
+      "username": "user24",
+      "password": "!",
+      "first_name": "Анастасия",
+      "last_name": "Петров",
+      "email": "user24@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 24,
+    "fields": {
+      "user": 24,
+      "full_name": "Анастасия Петров",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 25,
+    "fields": {
+      "username": "user25",
+      "password": "!",
+      "first_name": "Дмитрий",
+      "last_name": "Смирнов",
+      "email": "user25@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 25,
+    "fields": {
+      "user": 25,
+      "full_name": "Дмитрий Смирнов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 26,
+    "fields": {
+      "username": "user26",
+      "password": "!",
+      "first_name": "Елена",
+      "last_name": "Смирнов",
+      "email": "user26@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 26,
+    "fields": {
+      "user": 26,
+      "full_name": "Елена Смирнов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 27,
+    "fields": {
+      "username": "user27",
+      "password": "!",
+      "first_name": "Максим",
+      "last_name": "Смирнов",
+      "email": "user27@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 27,
+    "fields": {
+      "user": 27,
+      "full_name": "Максим Смирнов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 28,
+    "fields": {
+      "username": "user28",
+      "password": "!",
+      "first_name": "Ольга",
+      "last_name": "Смирнов",
+      "email": "user28@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 28,
+    "fields": {
+      "user": 28,
+      "full_name": "Ольга Смирнов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 29,
+    "fields": {
+      "username": "user29",
+      "password": "!",
+      "first_name": "Артём",
+      "last_name": "Смирнов",
+      "email": "user29@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 29,
+    "fields": {
+      "user": 29,
+      "full_name": "Артём Смирнов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 30,
+    "fields": {
+      "username": "user30",
+      "password": "!",
+      "first_name": "Анна",
+      "last_name": "Смирнов",
+      "email": "user30@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 30,
+    "fields": {
+      "user": 30,
+      "full_name": "Анна Смирнов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 31,
+    "fields": {
+      "username": "user31",
+      "password": "!",
+      "first_name": "Никита",
+      "last_name": "Смирнов",
+      "email": "user31@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 31,
+    "fields": {
+      "user": 31,
+      "full_name": "Никита Смирнов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 32,
+    "fields": {
+      "username": "user32",
+      "password": "!",
+      "first_name": "София",
+      "last_name": "Смирнов",
+      "email": "user32@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 32,
+    "fields": {
+      "user": 32,
+      "full_name": "София Смирнов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 33,
+    "fields": {
+      "username": "user33",
+      "password": "!",
+      "first_name": "Кирилл",
+      "last_name": "Смирнов",
+      "email": "user33@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 33,
+    "fields": {
+      "user": 33,
+      "full_name": "Кирилл Смирнов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 34,
+    "fields": {
+      "username": "user34",
+      "password": "!",
+      "first_name": "Дарья",
+      "last_name": "Смирнов",
+      "email": "user34@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 34,
+    "fields": {
+      "user": 34,
+      "full_name": "Дарья Смирнов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 35,
+    "fields": {
+      "username": "user35",
+      "password": "!",
+      "first_name": "Павел",
+      "last_name": "Смирнов",
+      "email": "user35@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 35,
+    "fields": {
+      "user": 35,
+      "full_name": "Павел Смирнов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 36,
+    "fields": {
+      "username": "user36",
+      "password": "!",
+      "first_name": "Виктория",
+      "last_name": "Смирнов",
+      "email": "user36@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 36,
+    "fields": {
+      "user": 36,
+      "full_name": "Виктория Смирнов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 37,
+    "fields": {
+      "username": "user37",
+      "password": "!",
+      "first_name": "Илья",
+      "last_name": "Кузнецов",
+      "email": "user37@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 37,
+    "fields": {
+      "user": 37,
+      "full_name": "Илья Кузнецов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 38,
+    "fields": {
+      "username": "user38",
+      "password": "!",
+      "first_name": "Полина",
+      "last_name": "Кузнецов",
+      "email": "user38@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 38,
+    "fields": {
+      "user": 38,
+      "full_name": "Полина Кузнецов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 39,
+    "fields": {
+      "username": "user39",
+      "password": "!",
+      "first_name": "Даниил",
+      "last_name": "Кузнецов",
+      "email": "user39@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 39,
+    "fields": {
+      "user": 39,
+      "full_name": "Даниил Кузнецов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 40,
+    "fields": {
+      "username": "user40",
+      "password": "!",
+      "first_name": "Екатерина",
+      "last_name": "Кузнецов",
+      "email": "user40@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 40,
+    "fields": {
+      "user": 40,
+      "full_name": "Екатерина Кузнецов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 41,
+    "fields": {
+      "username": "user41",
+      "password": "!",
+      "first_name": "Александр",
+      "last_name": "Кузнецов",
+      "email": "user41@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 41,
+    "fields": {
+      "user": 41,
+      "full_name": "Александр Кузнецов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 42,
+    "fields": {
+      "username": "user42",
+      "password": "!",
+      "first_name": "Мария",
+      "last_name": "Кузнецов",
+      "email": "user42@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 42,
+    "fields": {
+      "user": 42,
+      "full_name": "Мария Кузнецов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 43,
+    "fields": {
+      "username": "user43",
+      "password": "!",
+      "first_name": "Иван",
+      "last_name": "Кузнецов",
+      "email": "user43@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 43,
+    "fields": {
+      "user": 43,
+      "full_name": "Иван Кузнецов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 44,
+    "fields": {
+      "username": "user44",
+      "password": "!",
+      "first_name": "Анастасия",
+      "last_name": "Кузнецов",
+      "email": "user44@example.invalid",
+      "is_staff": 0,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 44,
+    "fields": {
+      "user": 44,
+      "full_name": "Анастасия Кузнецов",
+      "role": "student"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 45,
+    "fields": {
+      "username": "user45",
+      "password": "!",
+      "first_name": "Дмитрий",
+      "last_name": "Кузнецов",
+      "email": "user45@example.invalid",
+      "is_staff": 1,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 45,
+    "fields": {
+      "user": 45,
+      "full_name": "Дмитрий Кузнецов",
+      "role": "teacher"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 46,
+    "fields": {
+      "username": "user46",
+      "password": "!",
+      "first_name": "Елена",
+      "last_name": "Кузнецов",
+      "email": "user46@example.invalid",
+      "is_staff": 1,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 46,
+    "fields": {
+      "user": 46,
+      "full_name": "Елена Кузнецов",
+      "role": "teacher"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 47,
+    "fields": {
+      "username": "user47",
+      "password": "!",
+      "first_name": "Максим",
+      "last_name": "Кузнецов",
+      "email": "user47@example.invalid",
+      "is_staff": 1,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 47,
+    "fields": {
+      "user": 47,
+      "full_name": "Максим Кузнецов",
+      "role": "methodist"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 48,
+    "fields": {
+      "username": "user48",
+      "password": "!",
+      "first_name": "Ольга",
+      "last_name": "Кузнецов",
+      "email": "user48@example.invalid",
+      "is_staff": 1,
+      "is_active": 1,
+      "is_superuser": 0,
+      "date_joined": "2026-11-13T10:00:00+03:00",
+      "last_login": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "school.studentprofile",
+    "pk": 48,
+    "fields": {
+      "user": 48,
+      "full_name": "Ольга Кузнецов",
+      "role": "admin"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 1,
+    "fields": {
+      "student": 1,
+      "language": 1,
+      "level": 1,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 2,
+    "fields": {
+      "student": 2,
+      "language": 1,
+      "level": 2,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 3,
+    "fields": {
+      "student": 3,
+      "language": 1,
+      "level": 3,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 4,
+    "fields": {
+      "student": 4,
+      "language": 1,
+      "level": 4,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 5,
+    "fields": {
+      "student": 5,
+      "language": 1,
+      "level": 5,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 6,
+    "fields": {
+      "student": 6,
+      "language": 1,
+      "level": 1,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 7,
+    "fields": {
+      "student": 7,
+      "language": 1,
+      "level": 2,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 8,
+    "fields": {
+      "student": 8,
+      "language": 1,
+      "level": 3,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 9,
+    "fields": {
+      "student": 9,
+      "language": 1,
+      "level": 4,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 10,
+    "fields": {
+      "student": 10,
+      "language": 1,
+      "level": 5,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 11,
+    "fields": {
+      "student": 11,
+      "language": 1,
+      "level": 1,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 12,
+    "fields": {
+      "student": 12,
+      "language": 1,
+      "level": 2,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 13,
+    "fields": {
+      "student": 13,
+      "language": 1,
+      "level": 3,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 14,
+    "fields": {
+      "student": 14,
+      "language": 1,
+      "level": 4,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 15,
+    "fields": {
+      "student": 15,
+      "language": 1,
+      "level": 5,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 16,
+    "fields": {
+      "student": 16,
+      "language": 1,
+      "level": 1,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 17,
+    "fields": {
+      "student": 17,
+      "language": 1,
+      "level": 2,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 18,
+    "fields": {
+      "student": 18,
+      "language": 1,
+      "level": 3,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 19,
+    "fields": {
+      "student": 19,
+      "language": 1,
+      "level": 4,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 20,
+    "fields": {
+      "student": 20,
+      "language": 1,
+      "level": 5,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 21,
+    "fields": {
+      "student": 21,
+      "language": 1,
+      "level": 1,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 22,
+    "fields": {
+      "student": 22,
+      "language": 1,
+      "level": 2,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 23,
+    "fields": {
+      "student": 23,
+      "language": 1,
+      "level": 3,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 24,
+    "fields": {
+      "student": 24,
+      "language": 1,
+      "level": 4,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 25,
+    "fields": {
+      "student": 25,
+      "language": 1,
+      "level": 5,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 26,
+    "fields": {
+      "student": 26,
+      "language": 1,
+      "level": 1,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 27,
+    "fields": {
+      "student": 27,
+      "language": 1,
+      "level": 2,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 28,
+    "fields": {
+      "student": 28,
+      "language": 1,
+      "level": 3,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 29,
+    "fields": {
+      "student": 29,
+      "language": 1,
+      "level": 4,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 30,
+    "fields": {
+      "student": 30,
+      "language": 1,
+      "level": 5,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 31,
+    "fields": {
+      "student": 31,
+      "language": 1,
+      "level": 1,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 32,
+    "fields": {
+      "student": 32,
+      "language": 1,
+      "level": 2,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 33,
+    "fields": {
+      "student": 33,
+      "language": 1,
+      "level": 3,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 34,
+    "fields": {
+      "student": 34,
+      "language": 1,
+      "level": 4,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 35,
+    "fields": {
+      "student": 35,
+      "language": 1,
+      "level": 5,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 36,
+    "fields": {
+      "student": 36,
+      "language": 1,
+      "level": 1,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 37,
+    "fields": {
+      "student": 37,
+      "language": 2,
+      "level": 7,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 38,
+    "fields": {
+      "student": 38,
+      "language": 2,
+      "level": 8,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 39,
+    "fields": {
+      "student": 39,
+      "language": 2,
+      "level": 9,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 40,
+    "fields": {
+      "student": 40,
+      "language": 2,
+      "level": 10,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 41,
+    "fields": {
+      "student": 41,
+      "language": 2,
+      "level": 6,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 42,
+    "fields": {
+      "student": 42,
+      "language": 2,
+      "level": 7,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 43,
+    "fields": {
+      "student": 43,
+      "language": 2,
+      "level": 8,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studentlevel",
+    "pk": 44,
+    "fields": {
+      "student": 44,
+      "language": 2,
+      "level": 9,
+      "assigned_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.entrancetest",
+    "pk": 1,
+    "fields": {
+      "language": 1,
+      "title": "Английский — входное тестирование",
+      "is_active": 1,
+      "created_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testquestion",
+    "pk": 1,
+    "fields": {
+      "test": 1,
+      "text": "Задание 1 на грамматику языка 1",
+      "option_a": "Вариант A",
+      "option_b": "Вариант B",
+      "option_c": "Вариант C",
+      "option_d": "Вариант D",
+      "correct_option": "A",
+      "points": 1,
+      "position": 1
+    }
+  },
+  {
+    "model": "school.testquestion",
+    "pk": 2,
+    "fields": {
+      "test": 1,
+      "text": "Задание 2 на грамматику языка 1",
+      "option_a": "Вариант A",
+      "option_b": "Вариант B",
+      "option_c": "Вариант C",
+      "option_d": "Вариант D",
+      "correct_option": "A",
+      "points": 1,
+      "position": 2
+    }
+  },
+  {
+    "model": "school.testquestion",
+    "pk": 3,
+    "fields": {
+      "test": 1,
+      "text": "Задание 3 на грамматику языка 1",
+      "option_a": "Вариант A",
+      "option_b": "Вариант B",
+      "option_c": "Вариант C",
+      "option_d": "Вариант D",
+      "correct_option": "A",
+      "points": 1,
+      "position": 3
+    }
+  },
+  {
+    "model": "school.testquestion",
+    "pk": 4,
+    "fields": {
+      "test": 1,
+      "text": "Задание 4 на грамматику языка 1",
+      "option_a": "Вариант A",
+      "option_b": "Вариант B",
+      "option_c": "Вариант C",
+      "option_d": "Вариант D",
+      "correct_option": "A",
+      "points": 1,
+      "position": 4
+    }
+  },
+  {
+    "model": "school.testquestion",
+    "pk": 5,
+    "fields": {
+      "test": 1,
+      "text": "Задание 5 на грамматику языка 1",
+      "option_a": "Вариант A",
+      "option_b": "Вариант B",
+      "option_c": "Вариант C",
+      "option_d": "Вариант D",
+      "correct_option": "A",
+      "points": 1,
+      "position": 5
+    }
+  },
+  {
+    "model": "school.testquestion",
+    "pk": 6,
+    "fields": {
+      "test": 1,
+      "text": "Задание 6 на грамматику языка 1",
+      "option_a": "Вариант A",
+      "option_b": "Вариант B",
+      "option_c": "Вариант C",
+      "option_d": "Вариант D",
+      "correct_option": "A",
+      "points": 1,
+      "position": 6
+    }
+  },
+  {
+    "model": "school.testquestion",
+    "pk": 7,
+    "fields": {
+      "test": 1,
+      "text": "Задание 7 на грамматику языка 1",
+      "option_a": "Вариант A",
+      "option_b": "Вариант B",
+      "option_c": "Вариант C",
+      "option_d": "Вариант D",
+      "correct_option": "A",
+      "points": 1,
+      "position": 7
+    }
+  },
+  {
+    "model": "school.testquestion",
+    "pk": 8,
+    "fields": {
+      "test": 1,
+      "text": "Задание 8 на грамматику языка 1",
+      "option_a": "Вариант A",
+      "option_b": "Вариант B",
+      "option_c": "Вариант C",
+      "option_d": "Вариант D",
+      "correct_option": "A",
+      "points": 1,
+      "position": 8
+    }
+  },
+  {
+    "model": "school.testquestion",
+    "pk": 9,
+    "fields": {
+      "test": 1,
+      "text": "Задание 9 на грамматику языка 1",
+      "option_a": "Вариант A",
+      "option_b": "Вариант B",
+      "option_c": "Вариант C",
+      "option_d": "Вариант D",
+      "correct_option": "A",
+      "points": 1,
+      "position": 9
+    }
+  },
+  {
+    "model": "school.testquestion",
+    "pk": 10,
+    "fields": {
+      "test": 1,
+      "text": "Задание 10 на грамматику языка 1",
+      "option_a": "Вариант A",
+      "option_b": "Вариант B",
+      "option_c": "Вариант C",
+      "option_d": "Вариант D",
+      "correct_option": "A",
+      "points": 1,
+      "position": 10
+    }
+  },
+  {
+    "model": "school.scoreband",
+    "pk": 1,
+    "fields": {
+      "test": 1,
+      "level": 1,
+      "min_points": 0,
+      "max_points": 1
+    }
+  },
+  {
+    "model": "school.scoreband",
+    "pk": 2,
+    "fields": {
+      "test": 1,
+      "level": 2,
+      "min_points": 2,
+      "max_points": 3
+    }
+  },
+  {
+    "model": "school.scoreband",
+    "pk": 3,
+    "fields": {
+      "test": 1,
+      "level": 3,
+      "min_points": 4,
+      "max_points": 5
+    }
+  },
+  {
+    "model": "school.scoreband",
+    "pk": 4,
+    "fields": {
+      "test": 1,
+      "level": 4,
+      "min_points": 6,
+      "max_points": 7
+    }
+  },
+  {
+    "model": "school.scoreband",
+    "pk": 5,
+    "fields": {
+      "test": 1,
+      "level": 5,
+      "min_points": 8,
+      "max_points": 10
+    }
+  },
+  {
+    "model": "school.entrancetest",
+    "pk": 2,
+    "fields": {
+      "language": 2,
+      "title": "Немецкий — входное тестирование",
+      "is_active": 1,
+      "created_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testquestion",
+    "pk": 11,
+    "fields": {
+      "test": 2,
+      "text": "Задание 1 на грамматику языка 2",
+      "option_a": "Вариант A",
+      "option_b": "Вариант B",
+      "option_c": "Вариант C",
+      "option_d": "Вариант D",
+      "correct_option": "A",
+      "points": 1,
+      "position": 1
+    }
+  },
+  {
+    "model": "school.testquestion",
+    "pk": 12,
+    "fields": {
+      "test": 2,
+      "text": "Задание 2 на грамматику языка 2",
+      "option_a": "Вариант A",
+      "option_b": "Вариант B",
+      "option_c": "Вариант C",
+      "option_d": "Вариант D",
+      "correct_option": "A",
+      "points": 1,
+      "position": 2
+    }
+  },
+  {
+    "model": "school.testquestion",
+    "pk": 13,
+    "fields": {
+      "test": 2,
+      "text": "Задание 3 на грамматику языка 2",
+      "option_a": "Вариант A",
+      "option_b": "Вариант B",
+      "option_c": "Вариант C",
+      "option_d": "Вариант D",
+      "correct_option": "A",
+      "points": 1,
+      "position": 3
+    }
+  },
+  {
+    "model": "school.testquestion",
+    "pk": 14,
+    "fields": {
+      "test": 2,
+      "text": "Задание 4 на грамматику языка 2",
+      "option_a": "Вариант A",
+      "option_b": "Вариант B",
+      "option_c": "Вариант C",
+      "option_d": "Вариант D",
+      "correct_option": "A",
+      "points": 1,
+      "position": 4
+    }
+  },
+  {
+    "model": "school.testquestion",
+    "pk": 15,
+    "fields": {
+      "test": 2,
+      "text": "Задание 5 на грамматику языка 2",
+      "option_a": "Вариант A",
+      "option_b": "Вариант B",
+      "option_c": "Вариант C",
+      "option_d": "Вариант D",
+      "correct_option": "A",
+      "points": 1,
+      "position": 5
+    }
+  },
+  {
+    "model": "school.testquestion",
+    "pk": 16,
+    "fields": {
+      "test": 2,
+      "text": "Задание 6 на грамматику языка 2",
+      "option_a": "Вариант A",
+      "option_b": "Вариант B",
+      "option_c": "Вариант C",
+      "option_d": "Вариант D",
+      "correct_option": "A",
+      "points": 1,
+      "position": 6
+    }
+  },
+  {
+    "model": "school.testquestion",
+    "pk": 17,
+    "fields": {
+      "test": 2,
+      "text": "Задание 7 на грамматику языка 2",
+      "option_a": "Вариант A",
+      "option_b": "Вариант B",
+      "option_c": "Вариант C",
+      "option_d": "Вариант D",
+      "correct_option": "A",
+      "points": 1,
+      "position": 7
+    }
+  },
+  {
+    "model": "school.testquestion",
+    "pk": 18,
+    "fields": {
+      "test": 2,
+      "text": "Задание 8 на грамматику языка 2",
+      "option_a": "Вариант A",
+      "option_b": "Вариант B",
+      "option_c": "Вариант C",
+      "option_d": "Вариант D",
+      "correct_option": "A",
+      "points": 1,
+      "position": 8
+    }
+  },
+  {
+    "model": "school.testquestion",
+    "pk": 19,
+    "fields": {
+      "test": 2,
+      "text": "Задание 9 на грамматику языка 2",
+      "option_a": "Вариант A",
+      "option_b": "Вариант B",
+      "option_c": "Вариант C",
+      "option_d": "Вариант D",
+      "correct_option": "A",
+      "points": 1,
+      "position": 9
+    }
+  },
+  {
+    "model": "school.testquestion",
+    "pk": 20,
+    "fields": {
+      "test": 2,
+      "text": "Задание 10 на грамматику языка 2",
+      "option_a": "Вариант A",
+      "option_b": "Вариант B",
+      "option_c": "Вариант C",
+      "option_d": "Вариант D",
+      "correct_option": "A",
+      "points": 1,
+      "position": 10
+    }
+  },
+  {
+    "model": "school.scoreband",
+    "pk": 6,
+    "fields": {
+      "test": 2,
+      "level": 6,
+      "min_points": 0,
+      "max_points": 1
+    }
+  },
+  {
+    "model": "school.scoreband",
+    "pk": 7,
+    "fields": {
+      "test": 2,
+      "level": 7,
+      "min_points": 2,
+      "max_points": 3
+    }
+  },
+  {
+    "model": "school.scoreband",
+    "pk": 8,
+    "fields": {
+      "test": 2,
+      "level": 8,
+      "min_points": 4,
+      "max_points": 5
+    }
+  },
+  {
+    "model": "school.scoreband",
+    "pk": 9,
+    "fields": {
+      "test": 2,
+      "level": 9,
+      "min_points": 6,
+      "max_points": 7
+    }
+  },
+  {
+    "model": "school.scoreband",
+    "pk": 10,
+    "fields": {
+      "test": 2,
+      "level": 10,
+      "min_points": 8,
+      "max_points": 10
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 1,
+    "fields": {
+      "test": 1,
+      "student": 1,
+      "guest_email": "",
+      "score": 1,
+      "level": 1,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 1,
+    "fields": {
+      "result": 1,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 2,
+    "fields": {
+      "result": 1,
+      "question": 2,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 3,
+    "fields": {
+      "result": 1,
+      "question": 3,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 4,
+    "fields": {
+      "result": 1,
+      "question": 4,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 5,
+    "fields": {
+      "result": 1,
+      "question": 5,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 6,
+    "fields": {
+      "result": 1,
+      "question": 6,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 7,
+    "fields": {
+      "result": 1,
+      "question": 7,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 8,
+    "fields": {
+      "result": 1,
+      "question": 8,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 9,
+    "fields": {
+      "result": 1,
+      "question": 9,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 10,
+    "fields": {
+      "result": 1,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 2,
+    "fields": {
+      "test": 1,
+      "student": 2,
+      "guest_email": "",
+      "score": 3,
+      "level": 2,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 11,
+    "fields": {
+      "result": 2,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 12,
+    "fields": {
+      "result": 2,
+      "question": 2,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 13,
+    "fields": {
+      "result": 2,
+      "question": 3,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 14,
+    "fields": {
+      "result": 2,
+      "question": 4,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 15,
+    "fields": {
+      "result": 2,
+      "question": 5,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 16,
+    "fields": {
+      "result": 2,
+      "question": 6,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 17,
+    "fields": {
+      "result": 2,
+      "question": 7,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 18,
+    "fields": {
+      "result": 2,
+      "question": 8,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 19,
+    "fields": {
+      "result": 2,
+      "question": 9,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 20,
+    "fields": {
+      "result": 2,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 3,
+    "fields": {
+      "test": 1,
+      "student": 3,
+      "guest_email": "",
+      "score": 5,
+      "level": 3,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 21,
+    "fields": {
+      "result": 3,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 22,
+    "fields": {
+      "result": 3,
+      "question": 2,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 23,
+    "fields": {
+      "result": 3,
+      "question": 3,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 24,
+    "fields": {
+      "result": 3,
+      "question": 4,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 25,
+    "fields": {
+      "result": 3,
+      "question": 5,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 26,
+    "fields": {
+      "result": 3,
+      "question": 6,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 27,
+    "fields": {
+      "result": 3,
+      "question": 7,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 28,
+    "fields": {
+      "result": 3,
+      "question": 8,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 29,
+    "fields": {
+      "result": 3,
+      "question": 9,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 30,
+    "fields": {
+      "result": 3,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 4,
+    "fields": {
+      "test": 1,
+      "student": 4,
+      "guest_email": "",
+      "score": 7,
+      "level": 4,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 31,
+    "fields": {
+      "result": 4,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 32,
+    "fields": {
+      "result": 4,
+      "question": 2,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 33,
+    "fields": {
+      "result": 4,
+      "question": 3,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 34,
+    "fields": {
+      "result": 4,
+      "question": 4,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 35,
+    "fields": {
+      "result": 4,
+      "question": 5,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 36,
+    "fields": {
+      "result": 4,
+      "question": 6,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 37,
+    "fields": {
+      "result": 4,
+      "question": 7,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 38,
+    "fields": {
+      "result": 4,
+      "question": 8,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 39,
+    "fields": {
+      "result": 4,
+      "question": 9,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 40,
+    "fields": {
+      "result": 4,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 5,
+    "fields": {
+      "test": 1,
+      "student": 5,
+      "guest_email": "",
+      "score": 9,
+      "level": 5,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 41,
+    "fields": {
+      "result": 5,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 42,
+    "fields": {
+      "result": 5,
+      "question": 2,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 43,
+    "fields": {
+      "result": 5,
+      "question": 3,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 44,
+    "fields": {
+      "result": 5,
+      "question": 4,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 45,
+    "fields": {
+      "result": 5,
+      "question": 5,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 46,
+    "fields": {
+      "result": 5,
+      "question": 6,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 47,
+    "fields": {
+      "result": 5,
+      "question": 7,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 48,
+    "fields": {
+      "result": 5,
+      "question": 8,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 49,
+    "fields": {
+      "result": 5,
+      "question": 9,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 50,
+    "fields": {
+      "result": 5,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 6,
+    "fields": {
+      "test": 1,
+      "student": 6,
+      "guest_email": "",
+      "score": 1,
+      "level": 1,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 51,
+    "fields": {
+      "result": 6,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 52,
+    "fields": {
+      "result": 6,
+      "question": 2,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 53,
+    "fields": {
+      "result": 6,
+      "question": 3,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 54,
+    "fields": {
+      "result": 6,
+      "question": 4,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 55,
+    "fields": {
+      "result": 6,
+      "question": 5,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 56,
+    "fields": {
+      "result": 6,
+      "question": 6,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 57,
+    "fields": {
+      "result": 6,
+      "question": 7,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 58,
+    "fields": {
+      "result": 6,
+      "question": 8,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 59,
+    "fields": {
+      "result": 6,
+      "question": 9,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 60,
+    "fields": {
+      "result": 6,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 7,
+    "fields": {
+      "test": 1,
+      "student": 7,
+      "guest_email": "",
+      "score": 3,
+      "level": 2,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 61,
+    "fields": {
+      "result": 7,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 62,
+    "fields": {
+      "result": 7,
+      "question": 2,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 63,
+    "fields": {
+      "result": 7,
+      "question": 3,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 64,
+    "fields": {
+      "result": 7,
+      "question": 4,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 65,
+    "fields": {
+      "result": 7,
+      "question": 5,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 66,
+    "fields": {
+      "result": 7,
+      "question": 6,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 67,
+    "fields": {
+      "result": 7,
+      "question": 7,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 68,
+    "fields": {
+      "result": 7,
+      "question": 8,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 69,
+    "fields": {
+      "result": 7,
+      "question": 9,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 70,
+    "fields": {
+      "result": 7,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 8,
+    "fields": {
+      "test": 1,
+      "student": 8,
+      "guest_email": "",
+      "score": 5,
+      "level": 3,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 71,
+    "fields": {
+      "result": 8,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 72,
+    "fields": {
+      "result": 8,
+      "question": 2,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 73,
+    "fields": {
+      "result": 8,
+      "question": 3,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 74,
+    "fields": {
+      "result": 8,
+      "question": 4,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 75,
+    "fields": {
+      "result": 8,
+      "question": 5,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 76,
+    "fields": {
+      "result": 8,
+      "question": 6,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 77,
+    "fields": {
+      "result": 8,
+      "question": 7,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 78,
+    "fields": {
+      "result": 8,
+      "question": 8,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 79,
+    "fields": {
+      "result": 8,
+      "question": 9,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 80,
+    "fields": {
+      "result": 8,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 9,
+    "fields": {
+      "test": 1,
+      "student": 9,
+      "guest_email": "",
+      "score": 7,
+      "level": 4,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 81,
+    "fields": {
+      "result": 9,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 82,
+    "fields": {
+      "result": 9,
+      "question": 2,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 83,
+    "fields": {
+      "result": 9,
+      "question": 3,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 84,
+    "fields": {
+      "result": 9,
+      "question": 4,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 85,
+    "fields": {
+      "result": 9,
+      "question": 5,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 86,
+    "fields": {
+      "result": 9,
+      "question": 6,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 87,
+    "fields": {
+      "result": 9,
+      "question": 7,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 88,
+    "fields": {
+      "result": 9,
+      "question": 8,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 89,
+    "fields": {
+      "result": 9,
+      "question": 9,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 90,
+    "fields": {
+      "result": 9,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 10,
+    "fields": {
+      "test": 1,
+      "student": 10,
+      "guest_email": "",
+      "score": 9,
+      "level": 5,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 91,
+    "fields": {
+      "result": 10,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 92,
+    "fields": {
+      "result": 10,
+      "question": 2,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 93,
+    "fields": {
+      "result": 10,
+      "question": 3,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 94,
+    "fields": {
+      "result": 10,
+      "question": 4,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 95,
+    "fields": {
+      "result": 10,
+      "question": 5,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 96,
+    "fields": {
+      "result": 10,
+      "question": 6,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 97,
+    "fields": {
+      "result": 10,
+      "question": 7,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 98,
+    "fields": {
+      "result": 10,
+      "question": 8,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 99,
+    "fields": {
+      "result": 10,
+      "question": 9,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 100,
+    "fields": {
+      "result": 10,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 11,
+    "fields": {
+      "test": 1,
+      "student": 11,
+      "guest_email": "",
+      "score": 1,
+      "level": 1,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 101,
+    "fields": {
+      "result": 11,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 102,
+    "fields": {
+      "result": 11,
+      "question": 2,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 103,
+    "fields": {
+      "result": 11,
+      "question": 3,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 104,
+    "fields": {
+      "result": 11,
+      "question": 4,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 105,
+    "fields": {
+      "result": 11,
+      "question": 5,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 106,
+    "fields": {
+      "result": 11,
+      "question": 6,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 107,
+    "fields": {
+      "result": 11,
+      "question": 7,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 108,
+    "fields": {
+      "result": 11,
+      "question": 8,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 109,
+    "fields": {
+      "result": 11,
+      "question": 9,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 110,
+    "fields": {
+      "result": 11,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 12,
+    "fields": {
+      "test": 1,
+      "student": 12,
+      "guest_email": "",
+      "score": 3,
+      "level": 2,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 111,
+    "fields": {
+      "result": 12,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 112,
+    "fields": {
+      "result": 12,
+      "question": 2,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 113,
+    "fields": {
+      "result": 12,
+      "question": 3,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 114,
+    "fields": {
+      "result": 12,
+      "question": 4,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 115,
+    "fields": {
+      "result": 12,
+      "question": 5,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 116,
+    "fields": {
+      "result": 12,
+      "question": 6,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 117,
+    "fields": {
+      "result": 12,
+      "question": 7,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 118,
+    "fields": {
+      "result": 12,
+      "question": 8,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 119,
+    "fields": {
+      "result": 12,
+      "question": 9,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 120,
+    "fields": {
+      "result": 12,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 13,
+    "fields": {
+      "test": 1,
+      "student": 13,
+      "guest_email": "",
+      "score": 5,
+      "level": 3,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 121,
+    "fields": {
+      "result": 13,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 122,
+    "fields": {
+      "result": 13,
+      "question": 2,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 123,
+    "fields": {
+      "result": 13,
+      "question": 3,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 124,
+    "fields": {
+      "result": 13,
+      "question": 4,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 125,
+    "fields": {
+      "result": 13,
+      "question": 5,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 126,
+    "fields": {
+      "result": 13,
+      "question": 6,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 127,
+    "fields": {
+      "result": 13,
+      "question": 7,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 128,
+    "fields": {
+      "result": 13,
+      "question": 8,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 129,
+    "fields": {
+      "result": 13,
+      "question": 9,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 130,
+    "fields": {
+      "result": 13,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 14,
+    "fields": {
+      "test": 1,
+      "student": 14,
+      "guest_email": "",
+      "score": 7,
+      "level": 4,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 131,
+    "fields": {
+      "result": 14,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 132,
+    "fields": {
+      "result": 14,
+      "question": 2,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 133,
+    "fields": {
+      "result": 14,
+      "question": 3,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 134,
+    "fields": {
+      "result": 14,
+      "question": 4,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 135,
+    "fields": {
+      "result": 14,
+      "question": 5,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 136,
+    "fields": {
+      "result": 14,
+      "question": 6,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 137,
+    "fields": {
+      "result": 14,
+      "question": 7,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 138,
+    "fields": {
+      "result": 14,
+      "question": 8,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 139,
+    "fields": {
+      "result": 14,
+      "question": 9,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 140,
+    "fields": {
+      "result": 14,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 15,
+    "fields": {
+      "test": 1,
+      "student": 15,
+      "guest_email": "",
+      "score": 9,
+      "level": 5,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 141,
+    "fields": {
+      "result": 15,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 142,
+    "fields": {
+      "result": 15,
+      "question": 2,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 143,
+    "fields": {
+      "result": 15,
+      "question": 3,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 144,
+    "fields": {
+      "result": 15,
+      "question": 4,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 145,
+    "fields": {
+      "result": 15,
+      "question": 5,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 146,
+    "fields": {
+      "result": 15,
+      "question": 6,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 147,
+    "fields": {
+      "result": 15,
+      "question": 7,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 148,
+    "fields": {
+      "result": 15,
+      "question": 8,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 149,
+    "fields": {
+      "result": 15,
+      "question": 9,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 150,
+    "fields": {
+      "result": 15,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 16,
+    "fields": {
+      "test": 1,
+      "student": 16,
+      "guest_email": "",
+      "score": 1,
+      "level": 1,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 151,
+    "fields": {
+      "result": 16,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 152,
+    "fields": {
+      "result": 16,
+      "question": 2,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 153,
+    "fields": {
+      "result": 16,
+      "question": 3,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 154,
+    "fields": {
+      "result": 16,
+      "question": 4,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 155,
+    "fields": {
+      "result": 16,
+      "question": 5,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 156,
+    "fields": {
+      "result": 16,
+      "question": 6,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 157,
+    "fields": {
+      "result": 16,
+      "question": 7,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 158,
+    "fields": {
+      "result": 16,
+      "question": 8,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 159,
+    "fields": {
+      "result": 16,
+      "question": 9,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 160,
+    "fields": {
+      "result": 16,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 17,
+    "fields": {
+      "test": 1,
+      "student": 17,
+      "guest_email": "",
+      "score": 3,
+      "level": 2,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 161,
+    "fields": {
+      "result": 17,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 162,
+    "fields": {
+      "result": 17,
+      "question": 2,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 163,
+    "fields": {
+      "result": 17,
+      "question": 3,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 164,
+    "fields": {
+      "result": 17,
+      "question": 4,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 165,
+    "fields": {
+      "result": 17,
+      "question": 5,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 166,
+    "fields": {
+      "result": 17,
+      "question": 6,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 167,
+    "fields": {
+      "result": 17,
+      "question": 7,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 168,
+    "fields": {
+      "result": 17,
+      "question": 8,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 169,
+    "fields": {
+      "result": 17,
+      "question": 9,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 170,
+    "fields": {
+      "result": 17,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 18,
+    "fields": {
+      "test": 1,
+      "student": 18,
+      "guest_email": "",
+      "score": 5,
+      "level": 3,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 171,
+    "fields": {
+      "result": 18,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 172,
+    "fields": {
+      "result": 18,
+      "question": 2,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 173,
+    "fields": {
+      "result": 18,
+      "question": 3,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 174,
+    "fields": {
+      "result": 18,
+      "question": 4,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 175,
+    "fields": {
+      "result": 18,
+      "question": 5,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 176,
+    "fields": {
+      "result": 18,
+      "question": 6,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 177,
+    "fields": {
+      "result": 18,
+      "question": 7,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 178,
+    "fields": {
+      "result": 18,
+      "question": 8,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 179,
+    "fields": {
+      "result": 18,
+      "question": 9,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 180,
+    "fields": {
+      "result": 18,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 19,
+    "fields": {
+      "test": 1,
+      "student": 19,
+      "guest_email": "",
+      "score": 7,
+      "level": 4,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 181,
+    "fields": {
+      "result": 19,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 182,
+    "fields": {
+      "result": 19,
+      "question": 2,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 183,
+    "fields": {
+      "result": 19,
+      "question": 3,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 184,
+    "fields": {
+      "result": 19,
+      "question": 4,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 185,
+    "fields": {
+      "result": 19,
+      "question": 5,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 186,
+    "fields": {
+      "result": 19,
+      "question": 6,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 187,
+    "fields": {
+      "result": 19,
+      "question": 7,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 188,
+    "fields": {
+      "result": 19,
+      "question": 8,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 189,
+    "fields": {
+      "result": 19,
+      "question": 9,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 190,
+    "fields": {
+      "result": 19,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 20,
+    "fields": {
+      "test": 1,
+      "student": 20,
+      "guest_email": "",
+      "score": 9,
+      "level": 5,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 191,
+    "fields": {
+      "result": 20,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 192,
+    "fields": {
+      "result": 20,
+      "question": 2,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 193,
+    "fields": {
+      "result": 20,
+      "question": 3,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 194,
+    "fields": {
+      "result": 20,
+      "question": 4,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 195,
+    "fields": {
+      "result": 20,
+      "question": 5,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 196,
+    "fields": {
+      "result": 20,
+      "question": 6,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 197,
+    "fields": {
+      "result": 20,
+      "question": 7,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 198,
+    "fields": {
+      "result": 20,
+      "question": 8,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 199,
+    "fields": {
+      "result": 20,
+      "question": 9,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 200,
+    "fields": {
+      "result": 20,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 21,
+    "fields": {
+      "test": 1,
+      "student": 21,
+      "guest_email": "",
+      "score": 1,
+      "level": 1,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 201,
+    "fields": {
+      "result": 21,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 202,
+    "fields": {
+      "result": 21,
+      "question": 2,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 203,
+    "fields": {
+      "result": 21,
+      "question": 3,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 204,
+    "fields": {
+      "result": 21,
+      "question": 4,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 205,
+    "fields": {
+      "result": 21,
+      "question": 5,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 206,
+    "fields": {
+      "result": 21,
+      "question": 6,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 207,
+    "fields": {
+      "result": 21,
+      "question": 7,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 208,
+    "fields": {
+      "result": 21,
+      "question": 8,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 209,
+    "fields": {
+      "result": 21,
+      "question": 9,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 210,
+    "fields": {
+      "result": 21,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 22,
+    "fields": {
+      "test": 1,
+      "student": 22,
+      "guest_email": "",
+      "score": 3,
+      "level": 2,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 211,
+    "fields": {
+      "result": 22,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 212,
+    "fields": {
+      "result": 22,
+      "question": 2,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 213,
+    "fields": {
+      "result": 22,
+      "question": 3,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 214,
+    "fields": {
+      "result": 22,
+      "question": 4,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 215,
+    "fields": {
+      "result": 22,
+      "question": 5,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 216,
+    "fields": {
+      "result": 22,
+      "question": 6,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 217,
+    "fields": {
+      "result": 22,
+      "question": 7,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 218,
+    "fields": {
+      "result": 22,
+      "question": 8,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 219,
+    "fields": {
+      "result": 22,
+      "question": 9,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 220,
+    "fields": {
+      "result": 22,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 23,
+    "fields": {
+      "test": 1,
+      "student": 23,
+      "guest_email": "",
+      "score": 5,
+      "level": 3,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 221,
+    "fields": {
+      "result": 23,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 222,
+    "fields": {
+      "result": 23,
+      "question": 2,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 223,
+    "fields": {
+      "result": 23,
+      "question": 3,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 224,
+    "fields": {
+      "result": 23,
+      "question": 4,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 225,
+    "fields": {
+      "result": 23,
+      "question": 5,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 226,
+    "fields": {
+      "result": 23,
+      "question": 6,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 227,
+    "fields": {
+      "result": 23,
+      "question": 7,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 228,
+    "fields": {
+      "result": 23,
+      "question": 8,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 229,
+    "fields": {
+      "result": 23,
+      "question": 9,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 230,
+    "fields": {
+      "result": 23,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 24,
+    "fields": {
+      "test": 1,
+      "student": 24,
+      "guest_email": "",
+      "score": 7,
+      "level": 4,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 231,
+    "fields": {
+      "result": 24,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 232,
+    "fields": {
+      "result": 24,
+      "question": 2,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 233,
+    "fields": {
+      "result": 24,
+      "question": 3,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 234,
+    "fields": {
+      "result": 24,
+      "question": 4,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 235,
+    "fields": {
+      "result": 24,
+      "question": 5,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 236,
+    "fields": {
+      "result": 24,
+      "question": 6,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 237,
+    "fields": {
+      "result": 24,
+      "question": 7,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 238,
+    "fields": {
+      "result": 24,
+      "question": 8,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 239,
+    "fields": {
+      "result": 24,
+      "question": 9,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 240,
+    "fields": {
+      "result": 24,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 25,
+    "fields": {
+      "test": 1,
+      "student": 25,
+      "guest_email": "",
+      "score": 9,
+      "level": 5,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 241,
+    "fields": {
+      "result": 25,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 242,
+    "fields": {
+      "result": 25,
+      "question": 2,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 243,
+    "fields": {
+      "result": 25,
+      "question": 3,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 244,
+    "fields": {
+      "result": 25,
+      "question": 4,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 245,
+    "fields": {
+      "result": 25,
+      "question": 5,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 246,
+    "fields": {
+      "result": 25,
+      "question": 6,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 247,
+    "fields": {
+      "result": 25,
+      "question": 7,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 248,
+    "fields": {
+      "result": 25,
+      "question": 8,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 249,
+    "fields": {
+      "result": 25,
+      "question": 9,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 250,
+    "fields": {
+      "result": 25,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 26,
+    "fields": {
+      "test": 1,
+      "student": 26,
+      "guest_email": "",
+      "score": 1,
+      "level": 1,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 251,
+    "fields": {
+      "result": 26,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 252,
+    "fields": {
+      "result": 26,
+      "question": 2,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 253,
+    "fields": {
+      "result": 26,
+      "question": 3,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 254,
+    "fields": {
+      "result": 26,
+      "question": 4,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 255,
+    "fields": {
+      "result": 26,
+      "question": 5,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 256,
+    "fields": {
+      "result": 26,
+      "question": 6,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 257,
+    "fields": {
+      "result": 26,
+      "question": 7,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 258,
+    "fields": {
+      "result": 26,
+      "question": 8,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 259,
+    "fields": {
+      "result": 26,
+      "question": 9,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 260,
+    "fields": {
+      "result": 26,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 27,
+    "fields": {
+      "test": 1,
+      "student": 27,
+      "guest_email": "",
+      "score": 3,
+      "level": 2,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 261,
+    "fields": {
+      "result": 27,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 262,
+    "fields": {
+      "result": 27,
+      "question": 2,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 263,
+    "fields": {
+      "result": 27,
+      "question": 3,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 264,
+    "fields": {
+      "result": 27,
+      "question": 4,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 265,
+    "fields": {
+      "result": 27,
+      "question": 5,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 266,
+    "fields": {
+      "result": 27,
+      "question": 6,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 267,
+    "fields": {
+      "result": 27,
+      "question": 7,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 268,
+    "fields": {
+      "result": 27,
+      "question": 8,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 269,
+    "fields": {
+      "result": 27,
+      "question": 9,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 270,
+    "fields": {
+      "result": 27,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 28,
+    "fields": {
+      "test": 1,
+      "student": 28,
+      "guest_email": "",
+      "score": 5,
+      "level": 3,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 271,
+    "fields": {
+      "result": 28,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 272,
+    "fields": {
+      "result": 28,
+      "question": 2,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 273,
+    "fields": {
+      "result": 28,
+      "question": 3,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 274,
+    "fields": {
+      "result": 28,
+      "question": 4,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 275,
+    "fields": {
+      "result": 28,
+      "question": 5,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 276,
+    "fields": {
+      "result": 28,
+      "question": 6,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 277,
+    "fields": {
+      "result": 28,
+      "question": 7,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 278,
+    "fields": {
+      "result": 28,
+      "question": 8,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 279,
+    "fields": {
+      "result": 28,
+      "question": 9,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 280,
+    "fields": {
+      "result": 28,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 29,
+    "fields": {
+      "test": 1,
+      "student": 29,
+      "guest_email": "",
+      "score": 7,
+      "level": 4,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 281,
+    "fields": {
+      "result": 29,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 282,
+    "fields": {
+      "result": 29,
+      "question": 2,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 283,
+    "fields": {
+      "result": 29,
+      "question": 3,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 284,
+    "fields": {
+      "result": 29,
+      "question": 4,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 285,
+    "fields": {
+      "result": 29,
+      "question": 5,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 286,
+    "fields": {
+      "result": 29,
+      "question": 6,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 287,
+    "fields": {
+      "result": 29,
+      "question": 7,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 288,
+    "fields": {
+      "result": 29,
+      "question": 8,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 289,
+    "fields": {
+      "result": 29,
+      "question": 9,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 290,
+    "fields": {
+      "result": 29,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 30,
+    "fields": {
+      "test": 1,
+      "student": 30,
+      "guest_email": "",
+      "score": 9,
+      "level": 5,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 291,
+    "fields": {
+      "result": 30,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 292,
+    "fields": {
+      "result": 30,
+      "question": 2,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 293,
+    "fields": {
+      "result": 30,
+      "question": 3,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 294,
+    "fields": {
+      "result": 30,
+      "question": 4,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 295,
+    "fields": {
+      "result": 30,
+      "question": 5,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 296,
+    "fields": {
+      "result": 30,
+      "question": 6,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 297,
+    "fields": {
+      "result": 30,
+      "question": 7,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 298,
+    "fields": {
+      "result": 30,
+      "question": 8,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 299,
+    "fields": {
+      "result": 30,
+      "question": 9,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 300,
+    "fields": {
+      "result": 30,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 31,
+    "fields": {
+      "test": 1,
+      "student": 31,
+      "guest_email": "",
+      "score": 1,
+      "level": 1,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 301,
+    "fields": {
+      "result": 31,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 302,
+    "fields": {
+      "result": 31,
+      "question": 2,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 303,
+    "fields": {
+      "result": 31,
+      "question": 3,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 304,
+    "fields": {
+      "result": 31,
+      "question": 4,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 305,
+    "fields": {
+      "result": 31,
+      "question": 5,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 306,
+    "fields": {
+      "result": 31,
+      "question": 6,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 307,
+    "fields": {
+      "result": 31,
+      "question": 7,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 308,
+    "fields": {
+      "result": 31,
+      "question": 8,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 309,
+    "fields": {
+      "result": 31,
+      "question": 9,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 310,
+    "fields": {
+      "result": 31,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 32,
+    "fields": {
+      "test": 1,
+      "student": 32,
+      "guest_email": "",
+      "score": 3,
+      "level": 2,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 311,
+    "fields": {
+      "result": 32,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 312,
+    "fields": {
+      "result": 32,
+      "question": 2,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 313,
+    "fields": {
+      "result": 32,
+      "question": 3,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 314,
+    "fields": {
+      "result": 32,
+      "question": 4,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 315,
+    "fields": {
+      "result": 32,
+      "question": 5,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 316,
+    "fields": {
+      "result": 32,
+      "question": 6,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 317,
+    "fields": {
+      "result": 32,
+      "question": 7,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 318,
+    "fields": {
+      "result": 32,
+      "question": 8,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 319,
+    "fields": {
+      "result": 32,
+      "question": 9,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 320,
+    "fields": {
+      "result": 32,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 33,
+    "fields": {
+      "test": 1,
+      "student": 33,
+      "guest_email": "",
+      "score": 5,
+      "level": 3,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 321,
+    "fields": {
+      "result": 33,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 322,
+    "fields": {
+      "result": 33,
+      "question": 2,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 323,
+    "fields": {
+      "result": 33,
+      "question": 3,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 324,
+    "fields": {
+      "result": 33,
+      "question": 4,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 325,
+    "fields": {
+      "result": 33,
+      "question": 5,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 326,
+    "fields": {
+      "result": 33,
+      "question": 6,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 327,
+    "fields": {
+      "result": 33,
+      "question": 7,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 328,
+    "fields": {
+      "result": 33,
+      "question": 8,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 329,
+    "fields": {
+      "result": 33,
+      "question": 9,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 330,
+    "fields": {
+      "result": 33,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 34,
+    "fields": {
+      "test": 1,
+      "student": 34,
+      "guest_email": "",
+      "score": 7,
+      "level": 4,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 331,
+    "fields": {
+      "result": 34,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 332,
+    "fields": {
+      "result": 34,
+      "question": 2,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 333,
+    "fields": {
+      "result": 34,
+      "question": 3,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 334,
+    "fields": {
+      "result": 34,
+      "question": 4,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 335,
+    "fields": {
+      "result": 34,
+      "question": 5,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 336,
+    "fields": {
+      "result": 34,
+      "question": 6,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 337,
+    "fields": {
+      "result": 34,
+      "question": 7,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 338,
+    "fields": {
+      "result": 34,
+      "question": 8,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 339,
+    "fields": {
+      "result": 34,
+      "question": 9,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 340,
+    "fields": {
+      "result": 34,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 35,
+    "fields": {
+      "test": 1,
+      "student": 35,
+      "guest_email": "",
+      "score": 9,
+      "level": 5,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 341,
+    "fields": {
+      "result": 35,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 342,
+    "fields": {
+      "result": 35,
+      "question": 2,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 343,
+    "fields": {
+      "result": 35,
+      "question": 3,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 344,
+    "fields": {
+      "result": 35,
+      "question": 4,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 345,
+    "fields": {
+      "result": 35,
+      "question": 5,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 346,
+    "fields": {
+      "result": 35,
+      "question": 6,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 347,
+    "fields": {
+      "result": 35,
+      "question": 7,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 348,
+    "fields": {
+      "result": 35,
+      "question": 8,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 349,
+    "fields": {
+      "result": 35,
+      "question": 9,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 350,
+    "fields": {
+      "result": 35,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 36,
+    "fields": {
+      "test": 1,
+      "student": 36,
+      "guest_email": "",
+      "score": 1,
+      "level": 1,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 351,
+    "fields": {
+      "result": 36,
+      "question": 1,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 352,
+    "fields": {
+      "result": 36,
+      "question": 2,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 353,
+    "fields": {
+      "result": 36,
+      "question": 3,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 354,
+    "fields": {
+      "result": 36,
+      "question": 4,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 355,
+    "fields": {
+      "result": 36,
+      "question": 5,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 356,
+    "fields": {
+      "result": 36,
+      "question": 6,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 357,
+    "fields": {
+      "result": 36,
+      "question": 7,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 358,
+    "fields": {
+      "result": 36,
+      "question": 8,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 359,
+    "fields": {
+      "result": 36,
+      "question": 9,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 360,
+    "fields": {
+      "result": 36,
+      "question": 10,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 37,
+    "fields": {
+      "test": 2,
+      "student": 37,
+      "guest_email": "",
+      "score": 3,
+      "level": 7,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 361,
+    "fields": {
+      "result": 37,
+      "question": 11,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 362,
+    "fields": {
+      "result": 37,
+      "question": 12,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 363,
+    "fields": {
+      "result": 37,
+      "question": 13,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 364,
+    "fields": {
+      "result": 37,
+      "question": 14,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 365,
+    "fields": {
+      "result": 37,
+      "question": 15,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 366,
+    "fields": {
+      "result": 37,
+      "question": 16,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 367,
+    "fields": {
+      "result": 37,
+      "question": 17,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 368,
+    "fields": {
+      "result": 37,
+      "question": 18,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 369,
+    "fields": {
+      "result": 37,
+      "question": 19,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 370,
+    "fields": {
+      "result": 37,
+      "question": 20,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 38,
+    "fields": {
+      "test": 2,
+      "student": 38,
+      "guest_email": "",
+      "score": 5,
+      "level": 8,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 371,
+    "fields": {
+      "result": 38,
+      "question": 11,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 372,
+    "fields": {
+      "result": 38,
+      "question": 12,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 373,
+    "fields": {
+      "result": 38,
+      "question": 13,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 374,
+    "fields": {
+      "result": 38,
+      "question": 14,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 375,
+    "fields": {
+      "result": 38,
+      "question": 15,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 376,
+    "fields": {
+      "result": 38,
+      "question": 16,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 377,
+    "fields": {
+      "result": 38,
+      "question": 17,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 378,
+    "fields": {
+      "result": 38,
+      "question": 18,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 379,
+    "fields": {
+      "result": 38,
+      "question": 19,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 380,
+    "fields": {
+      "result": 38,
+      "question": 20,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 39,
+    "fields": {
+      "test": 2,
+      "student": 39,
+      "guest_email": "",
+      "score": 7,
+      "level": 9,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 381,
+    "fields": {
+      "result": 39,
+      "question": 11,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 382,
+    "fields": {
+      "result": 39,
+      "question": 12,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 383,
+    "fields": {
+      "result": 39,
+      "question": 13,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 384,
+    "fields": {
+      "result": 39,
+      "question": 14,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 385,
+    "fields": {
+      "result": 39,
+      "question": 15,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 386,
+    "fields": {
+      "result": 39,
+      "question": 16,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 387,
+    "fields": {
+      "result": 39,
+      "question": 17,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 388,
+    "fields": {
+      "result": 39,
+      "question": 18,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 389,
+    "fields": {
+      "result": 39,
+      "question": 19,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 390,
+    "fields": {
+      "result": 39,
+      "question": 20,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 40,
+    "fields": {
+      "test": 2,
+      "student": 40,
+      "guest_email": "",
+      "score": 9,
+      "level": 10,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 391,
+    "fields": {
+      "result": 40,
+      "question": 11,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 392,
+    "fields": {
+      "result": 40,
+      "question": 12,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 393,
+    "fields": {
+      "result": 40,
+      "question": 13,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 394,
+    "fields": {
+      "result": 40,
+      "question": 14,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 395,
+    "fields": {
+      "result": 40,
+      "question": 15,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 396,
+    "fields": {
+      "result": 40,
+      "question": 16,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 397,
+    "fields": {
+      "result": 40,
+      "question": 17,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 398,
+    "fields": {
+      "result": 40,
+      "question": 18,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 399,
+    "fields": {
+      "result": 40,
+      "question": 19,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 400,
+    "fields": {
+      "result": 40,
+      "question": 20,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 41,
+    "fields": {
+      "test": 2,
+      "student": 41,
+      "guest_email": "",
+      "score": 1,
+      "level": 6,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 401,
+    "fields": {
+      "result": 41,
+      "question": 11,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 402,
+    "fields": {
+      "result": 41,
+      "question": 12,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 403,
+    "fields": {
+      "result": 41,
+      "question": 13,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 404,
+    "fields": {
+      "result": 41,
+      "question": 14,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 405,
+    "fields": {
+      "result": 41,
+      "question": 15,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 406,
+    "fields": {
+      "result": 41,
+      "question": 16,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 407,
+    "fields": {
+      "result": 41,
+      "question": 17,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 408,
+    "fields": {
+      "result": 41,
+      "question": 18,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 409,
+    "fields": {
+      "result": 41,
+      "question": 19,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 410,
+    "fields": {
+      "result": 41,
+      "question": 20,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 42,
+    "fields": {
+      "test": 2,
+      "student": 42,
+      "guest_email": "",
+      "score": 3,
+      "level": 7,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 411,
+    "fields": {
+      "result": 42,
+      "question": 11,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 412,
+    "fields": {
+      "result": 42,
+      "question": 12,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 413,
+    "fields": {
+      "result": 42,
+      "question": 13,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 414,
+    "fields": {
+      "result": 42,
+      "question": 14,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 415,
+    "fields": {
+      "result": 42,
+      "question": 15,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 416,
+    "fields": {
+      "result": 42,
+      "question": 16,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 417,
+    "fields": {
+      "result": 42,
+      "question": 17,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 418,
+    "fields": {
+      "result": 42,
+      "question": 18,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 419,
+    "fields": {
+      "result": 42,
+      "question": 19,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 420,
+    "fields": {
+      "result": 42,
+      "question": 20,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 43,
+    "fields": {
+      "test": 2,
+      "student": 43,
+      "guest_email": "",
+      "score": 5,
+      "level": 8,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 421,
+    "fields": {
+      "result": 43,
+      "question": 11,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 422,
+    "fields": {
+      "result": 43,
+      "question": 12,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 423,
+    "fields": {
+      "result": 43,
+      "question": 13,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 424,
+    "fields": {
+      "result": 43,
+      "question": 14,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 425,
+    "fields": {
+      "result": 43,
+      "question": 15,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 426,
+    "fields": {
+      "result": 43,
+      "question": 16,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 427,
+    "fields": {
+      "result": 43,
+      "question": 17,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 428,
+    "fields": {
+      "result": 43,
+      "question": 18,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 429,
+    "fields": {
+      "result": 43,
+      "question": 19,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 430,
+    "fields": {
+      "result": 43,
+      "question": 20,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testresult",
+    "pk": 44,
+    "fields": {
+      "test": 2,
+      "student": 44,
+      "guest_email": "",
+      "score": 7,
+      "level": 9,
+      "completed_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 431,
+    "fields": {
+      "result": 44,
+      "question": 11,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 432,
+    "fields": {
+      "result": 44,
+      "question": 12,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 433,
+    "fields": {
+      "result": 44,
+      "question": 13,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 434,
+    "fields": {
+      "result": 44,
+      "question": 14,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 435,
+    "fields": {
+      "result": 44,
+      "question": 15,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 436,
+    "fields": {
+      "result": 44,
+      "question": 16,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 437,
+    "fields": {
+      "result": 44,
+      "question": 17,
+      "selected_option": "A"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 438,
+    "fields": {
+      "result": 44,
+      "question": 18,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 439,
+    "fields": {
+      "result": 44,
+      "question": 19,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.testanswer",
+    "pk": 440,
+    "fields": {
+      "result": 44,
+      "question": 20,
+      "selected_option": "B"
+    }
+  },
+  {
+    "model": "school.studygroup",
+    "pk": 1,
+    "fields": {
+      "title": "EN-B1-01",
+      "language": 1,
+      "level": 3,
+      "teacher": 45,
+      "capacity": 8,
+      "status": "started",
+      "start_date": "2026-12-03"
+    }
+  },
+  {
+    "model": "school.groupschedule",
+    "pk": 1,
+    "fields": {
+      "group": 1,
+      "weekday": 2,
+      "start_time": "18:00:00",
+      "end_time": "19:30:00",
+      "meeting_url": "https://example.invalid/lesson"
+    }
+  },
+  {
+    "model": "school.groupschedule",
+    "pk": 2,
+    "fields": {
+      "group": 1,
+      "weekday": 4,
+      "start_time": "18:00:00",
+      "end_time": "19:30:00",
+      "meeting_url": "https://example.invalid/lesson"
+    }
+  },
+  {
+    "model": "school.homework",
+    "pk": 1,
+    "fields": {
+      "group": 1,
+      "title": "Практика 1: группа 1",
+      "description": "Выполнить упражнения по теме занятия.",
+      "deadline": "2026-12-13T18:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homework",
+    "pk": 2,
+    "fields": {
+      "group": 1,
+      "title": "Практика 2: группа 1",
+      "description": "Выполнить упражнения по теме занятия.",
+      "deadline": "2026-12-13T18:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studygroup",
+    "pk": 2,
+    "fields": {
+      "title": "EN-A1-02",
+      "language": 1,
+      "level": 1,
+      "teacher": 45,
+      "capacity": 8,
+      "status": "started",
+      "start_date": "2026-12-04"
+    }
+  },
+  {
+    "model": "school.groupschedule",
+    "pk": 3,
+    "fields": {
+      "group": 2,
+      "weekday": 2,
+      "start_time": "18:00:00",
+      "end_time": "19:30:00",
+      "meeting_url": "https://example.invalid/lesson"
+    }
+  },
+  {
+    "model": "school.groupschedule",
+    "pk": 4,
+    "fields": {
+      "group": 2,
+      "weekday": 4,
+      "start_time": "18:00:00",
+      "end_time": "19:30:00",
+      "meeting_url": "https://example.invalid/lesson"
+    }
+  },
+  {
+    "model": "school.homework",
+    "pk": 3,
+    "fields": {
+      "group": 2,
+      "title": "Практика 1: группа 2",
+      "description": "Выполнить упражнения по теме занятия.",
+      "deadline": "2026-12-14T18:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homework",
+    "pk": 4,
+    "fields": {
+      "group": 2,
+      "title": "Практика 2: группа 2",
+      "description": "Выполнить упражнения по теме занятия.",
+      "deadline": "2026-12-14T18:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studygroup",
+    "pk": 3,
+    "fields": {
+      "title": "EN-A2-03",
+      "language": 1,
+      "level": 2,
+      "teacher": 45,
+      "capacity": 8,
+      "status": "started",
+      "start_date": "2026-12-05"
+    }
+  },
+  {
+    "model": "school.groupschedule",
+    "pk": 5,
+    "fields": {
+      "group": 3,
+      "weekday": 2,
+      "start_time": "18:00:00",
+      "end_time": "19:30:00",
+      "meeting_url": "https://example.invalid/lesson"
+    }
+  },
+  {
+    "model": "school.groupschedule",
+    "pk": 6,
+    "fields": {
+      "group": 3,
+      "weekday": 4,
+      "start_time": "18:00:00",
+      "end_time": "19:30:00",
+      "meeting_url": "https://example.invalid/lesson"
+    }
+  },
+  {
+    "model": "school.homework",
+    "pk": 5,
+    "fields": {
+      "group": 3,
+      "title": "Практика 1: группа 3",
+      "description": "Выполнить упражнения по теме занятия.",
+      "deadline": "2026-12-15T18:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homework",
+    "pk": 6,
+    "fields": {
+      "group": 3,
+      "title": "Практика 2: группа 3",
+      "description": "Выполнить упражнения по теме занятия.",
+      "deadline": "2026-12-15T18:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studygroup",
+    "pk": 4,
+    "fields": {
+      "title": "EN-B2-04",
+      "language": 1,
+      "level": 4,
+      "teacher": 45,
+      "capacity": 8,
+      "status": "started",
+      "start_date": "2026-12-06"
+    }
+  },
+  {
+    "model": "school.groupschedule",
+    "pk": 7,
+    "fields": {
+      "group": 4,
+      "weekday": 2,
+      "start_time": "18:00:00",
+      "end_time": "19:30:00",
+      "meeting_url": "https://example.invalid/lesson"
+    }
+  },
+  {
+    "model": "school.groupschedule",
+    "pk": 8,
+    "fields": {
+      "group": 4,
+      "weekday": 4,
+      "start_time": "18:00:00",
+      "end_time": "19:30:00",
+      "meeting_url": "https://example.invalid/lesson"
+    }
+  },
+  {
+    "model": "school.homework",
+    "pk": 7,
+    "fields": {
+      "group": 4,
+      "title": "Практика 1: группа 4",
+      "description": "Выполнить упражнения по теме занятия.",
+      "deadline": "2026-12-16T18:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homework",
+    "pk": 8,
+    "fields": {
+      "group": 4,
+      "title": "Практика 2: группа 4",
+      "description": "Выполнить упражнения по теме занятия.",
+      "deadline": "2026-12-16T18:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studygroup",
+    "pk": 5,
+    "fields": {
+      "title": "EN-C1-05",
+      "language": 1,
+      "level": 5,
+      "teacher": 45,
+      "capacity": 8,
+      "status": "started",
+      "start_date": "2026-12-07"
+    }
+  },
+  {
+    "model": "school.groupschedule",
+    "pk": 9,
+    "fields": {
+      "group": 5,
+      "weekday": 2,
+      "start_time": "18:00:00",
+      "end_time": "19:30:00",
+      "meeting_url": "https://example.invalid/lesson"
+    }
+  },
+  {
+    "model": "school.groupschedule",
+    "pk": 10,
+    "fields": {
+      "group": 5,
+      "weekday": 4,
+      "start_time": "18:00:00",
+      "end_time": "19:30:00",
+      "meeting_url": "https://example.invalid/lesson"
+    }
+  },
+  {
+    "model": "school.homework",
+    "pk": 9,
+    "fields": {
+      "group": 5,
+      "title": "Практика 1: группа 5",
+      "description": "Выполнить упражнения по теме занятия.",
+      "deadline": "2026-12-17T18:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homework",
+    "pk": 10,
+    "fields": {
+      "group": 5,
+      "title": "Практика 2: группа 5",
+      "description": "Выполнить упражнения по теме занятия.",
+      "deadline": "2026-12-17T18:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studygroup",
+    "pk": 6,
+    "fields": {
+      "title": "DE-A1-06",
+      "language": 2,
+      "level": 6,
+      "teacher": 46,
+      "capacity": 8,
+      "status": "forming",
+      "start_date": "2026-12-08"
+    }
+  },
+  {
+    "model": "school.groupschedule",
+    "pk": 11,
+    "fields": {
+      "group": 6,
+      "weekday": 2,
+      "start_time": "18:00:00",
+      "end_time": "19:30:00",
+      "meeting_url": "https://example.invalid/lesson"
+    }
+  },
+  {
+    "model": "school.groupschedule",
+    "pk": 12,
+    "fields": {
+      "group": 6,
+      "weekday": 4,
+      "start_time": "18:00:00",
+      "end_time": "19:30:00",
+      "meeting_url": "https://example.invalid/lesson"
+    }
+  },
+  {
+    "model": "school.homework",
+    "pk": 11,
+    "fields": {
+      "group": 6,
+      "title": "Практика 1: группа 6",
+      "description": "Выполнить упражнения по теме занятия.",
+      "deadline": "2026-12-18T18:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homework",
+    "pk": 12,
+    "fields": {
+      "group": 6,
+      "title": "Практика 2: группа 6",
+      "description": "Выполнить упражнения по теме занятия.",
+      "deadline": "2026-12-18T18:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studygroup",
+    "pk": 7,
+    "fields": {
+      "title": "DE-A2-07",
+      "language": 2,
+      "level": 7,
+      "teacher": 46,
+      "capacity": 8,
+      "status": "forming",
+      "start_date": "2026-12-09"
+    }
+  },
+  {
+    "model": "school.groupschedule",
+    "pk": 13,
+    "fields": {
+      "group": 7,
+      "weekday": 2,
+      "start_time": "18:00:00",
+      "end_time": "19:30:00",
+      "meeting_url": "https://example.invalid/lesson"
+    }
+  },
+  {
+    "model": "school.groupschedule",
+    "pk": 14,
+    "fields": {
+      "group": 7,
+      "weekday": 4,
+      "start_time": "18:00:00",
+      "end_time": "19:30:00",
+      "meeting_url": "https://example.invalid/lesson"
+    }
+  },
+  {
+    "model": "school.homework",
+    "pk": 13,
+    "fields": {
+      "group": 7,
+      "title": "Практика 1: группа 7",
+      "description": "Выполнить упражнения по теме занятия.",
+      "deadline": "2026-12-19T18:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homework",
+    "pk": 14,
+    "fields": {
+      "group": 7,
+      "title": "Практика 2: группа 7",
+      "description": "Выполнить упражнения по теме занятия.",
+      "deadline": "2026-12-19T18:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studygroup",
+    "pk": 8,
+    "fields": {
+      "title": "DE-B1-08",
+      "language": 2,
+      "level": 8,
+      "teacher": 46,
+      "capacity": 8,
+      "status": "forming",
+      "start_date": "2026-12-10"
+    }
+  },
+  {
+    "model": "school.groupschedule",
+    "pk": 15,
+    "fields": {
+      "group": 8,
+      "weekday": 2,
+      "start_time": "18:00:00",
+      "end_time": "19:30:00",
+      "meeting_url": "https://example.invalid/lesson"
+    }
+  },
+  {
+    "model": "school.groupschedule",
+    "pk": 16,
+    "fields": {
+      "group": 8,
+      "weekday": 4,
+      "start_time": "18:00:00",
+      "end_time": "19:30:00",
+      "meeting_url": "https://example.invalid/lesson"
+    }
+  },
+  {
+    "model": "school.homework",
+    "pk": 15,
+    "fields": {
+      "group": 8,
+      "title": "Практика 1: группа 8",
+      "description": "Выполнить упражнения по теме занятия.",
+      "deadline": "2026-12-20T18:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homework",
+    "pk": 16,
+    "fields": {
+      "group": 8,
+      "title": "Практика 2: группа 8",
+      "description": "Выполнить упражнения по теме занятия.",
+      "deadline": "2026-12-20T18:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studygroup",
+    "pk": 9,
+    "fields": {
+      "title": "DE-B2-09",
+      "language": 2,
+      "level": 9,
+      "teacher": 46,
+      "capacity": 8,
+      "status": "forming",
+      "start_date": "2026-12-11"
+    }
+  },
+  {
+    "model": "school.groupschedule",
+    "pk": 17,
+    "fields": {
+      "group": 9,
+      "weekday": 2,
+      "start_time": "18:00:00",
+      "end_time": "19:30:00",
+      "meeting_url": "https://example.invalid/lesson"
+    }
+  },
+  {
+    "model": "school.groupschedule",
+    "pk": 18,
+    "fields": {
+      "group": 9,
+      "weekday": 4,
+      "start_time": "18:00:00",
+      "end_time": "19:30:00",
+      "meeting_url": "https://example.invalid/lesson"
+    }
+  },
+  {
+    "model": "school.homework",
+    "pk": 17,
+    "fields": {
+      "group": 9,
+      "title": "Практика 1: группа 9",
+      "description": "Выполнить упражнения по теме занятия.",
+      "deadline": "2026-12-21T18:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homework",
+    "pk": 18,
+    "fields": {
+      "group": 9,
+      "title": "Практика 2: группа 9",
+      "description": "Выполнить упражнения по теме занятия.",
+      "deadline": "2026-12-21T18:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.studygroup",
+    "pk": 10,
+    "fields": {
+      "title": "DE-C1-10",
+      "language": 2,
+      "level": 10,
+      "teacher": 46,
+      "capacity": 8,
+      "status": "forming",
+      "start_date": "2026-12-12"
+    }
+  },
+  {
+    "model": "school.groupschedule",
+    "pk": 19,
+    "fields": {
+      "group": 10,
+      "weekday": 2,
+      "start_time": "18:00:00",
+      "end_time": "19:30:00",
+      "meeting_url": "https://example.invalid/lesson"
+    }
+  },
+  {
+    "model": "school.groupschedule",
+    "pk": 20,
+    "fields": {
+      "group": 10,
+      "weekday": 4,
+      "start_time": "18:00:00",
+      "end_time": "19:30:00",
+      "meeting_url": "https://example.invalid/lesson"
+    }
+  },
+  {
+    "model": "school.homework",
+    "pk": 19,
+    "fields": {
+      "group": 10,
+      "title": "Практика 1: группа 10",
+      "description": "Выполнить упражнения по теме занятия.",
+      "deadline": "2026-12-22T18:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homework",
+    "pk": 20,
+    "fields": {
+      "group": 10,
+      "title": "Практика 2: группа 10",
+      "description": "Выполнить упражнения по теме занятия.",
+      "deadline": "2026-12-22T18:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.enrollment",
+    "pk": 1,
+    "fields": {
+      "student": 3,
+      "group": 1,
+      "enrolled_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homeworksubmission",
+    "pk": 1,
+    "fields": {
+      "homework": 1,
+      "student": 3,
+      "text": "Решение ученика 3",
+      "submitted_at": "2026-11-13T10:00:00+03:00",
+      "grade": 5,
+      "teacher_comment": "Хорошо"
+    }
+  },
+  {
+    "model": "school.enrollment",
+    "pk": 2,
+    "fields": {
+      "student": 8,
+      "group": 1,
+      "enrolled_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homeworksubmission",
+    "pk": 2,
+    "fields": {
+      "homework": 1,
+      "student": 8,
+      "text": "Решение ученика 8",
+      "submitted_at": "2026-11-13T10:00:00+03:00",
+      "grade": 5,
+      "teacher_comment": "Хорошо"
+    }
+  },
+  {
+    "model": "school.enrollment",
+    "pk": 3,
+    "fields": {
+      "student": 13,
+      "group": 1,
+      "enrolled_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homeworksubmission",
+    "pk": 3,
+    "fields": {
+      "homework": 1,
+      "student": 13,
+      "text": "Решение ученика 13",
+      "submitted_at": "2026-11-13T10:00:00+03:00",
+      "grade": 5,
+      "teacher_comment": "Хорошо"
+    }
+  },
+  {
+    "model": "school.enrollment",
+    "pk": 4,
+    "fields": {
+      "student": 18,
+      "group": 1,
+      "enrolled_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homeworksubmission",
+    "pk": 4,
+    "fields": {
+      "homework": 1,
+      "student": 18,
+      "text": "Решение ученика 18",
+      "submitted_at": "2026-11-13T10:00:00+03:00",
+      "grade": 5,
+      "teacher_comment": "Хорошо"
+    }
+  },
+  {
+    "model": "school.enrollment",
+    "pk": 5,
+    "fields": {
+      "student": 1,
+      "group": 2,
+      "enrolled_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homeworksubmission",
+    "pk": 5,
+    "fields": {
+      "homework": 3,
+      "student": 1,
+      "text": "Решение ученика 1",
+      "submitted_at": "2026-11-13T10:00:00+03:00",
+      "grade": 5,
+      "teacher_comment": "Хорошо"
+    }
+  },
+  {
+    "model": "school.enrollment",
+    "pk": 6,
+    "fields": {
+      "student": 6,
+      "group": 2,
+      "enrolled_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homeworksubmission",
+    "pk": 6,
+    "fields": {
+      "homework": 3,
+      "student": 6,
+      "text": "Решение ученика 6",
+      "submitted_at": "2026-11-13T10:00:00+03:00",
+      "grade": 5,
+      "teacher_comment": "Хорошо"
+    }
+  },
+  {
+    "model": "school.enrollment",
+    "pk": 7,
+    "fields": {
+      "student": 11,
+      "group": 2,
+      "enrolled_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homeworksubmission",
+    "pk": 7,
+    "fields": {
+      "homework": 3,
+      "student": 11,
+      "text": "Решение ученика 11",
+      "submitted_at": "2026-11-13T10:00:00+03:00",
+      "grade": 5,
+      "teacher_comment": "Хорошо"
+    }
+  },
+  {
+    "model": "school.enrollment",
+    "pk": 8,
+    "fields": {
+      "student": 16,
+      "group": 2,
+      "enrolled_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homeworksubmission",
+    "pk": 8,
+    "fields": {
+      "homework": 3,
+      "student": 16,
+      "text": "Решение ученика 16",
+      "submitted_at": "2026-11-13T10:00:00+03:00",
+      "grade": 5,
+      "teacher_comment": "Хорошо"
+    }
+  },
+  {
+    "model": "school.enrollment",
+    "pk": 9,
+    "fields": {
+      "student": 2,
+      "group": 3,
+      "enrolled_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homeworksubmission",
+    "pk": 9,
+    "fields": {
+      "homework": 5,
+      "student": 2,
+      "text": "Решение ученика 2",
+      "submitted_at": "2026-11-13T10:00:00+03:00",
+      "grade": 5,
+      "teacher_comment": "Хорошо"
+    }
+  },
+  {
+    "model": "school.enrollment",
+    "pk": 10,
+    "fields": {
+      "student": 7,
+      "group": 3,
+      "enrolled_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homeworksubmission",
+    "pk": 10,
+    "fields": {
+      "homework": 5,
+      "student": 7,
+      "text": "Решение ученика 7",
+      "submitted_at": "2026-11-13T10:00:00+03:00",
+      "grade": 5,
+      "teacher_comment": "Хорошо"
+    }
+  },
+  {
+    "model": "school.enrollment",
+    "pk": 11,
+    "fields": {
+      "student": 12,
+      "group": 3,
+      "enrolled_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homeworksubmission",
+    "pk": 11,
+    "fields": {
+      "homework": 5,
+      "student": 12,
+      "text": "Решение ученика 12",
+      "submitted_at": "2026-11-13T10:00:00+03:00",
+      "grade": 5,
+      "teacher_comment": "Хорошо"
+    }
+  },
+  {
+    "model": "school.enrollment",
+    "pk": 12,
+    "fields": {
+      "student": 17,
+      "group": 3,
+      "enrolled_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homeworksubmission",
+    "pk": 12,
+    "fields": {
+      "homework": 5,
+      "student": 17,
+      "text": "Решение ученика 17",
+      "submitted_at": "2026-11-13T10:00:00+03:00",
+      "grade": 5,
+      "teacher_comment": "Хорошо"
+    }
+  },
+  {
+    "model": "school.enrollment",
+    "pk": 13,
+    "fields": {
+      "student": 4,
+      "group": 4,
+      "enrolled_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homeworksubmission",
+    "pk": 13,
+    "fields": {
+      "homework": 7,
+      "student": 4,
+      "text": "Решение ученика 4",
+      "submitted_at": "2026-11-13T10:00:00+03:00",
+      "grade": 5,
+      "teacher_comment": "Хорошо"
+    }
+  },
+  {
+    "model": "school.enrollment",
+    "pk": 14,
+    "fields": {
+      "student": 9,
+      "group": 4,
+      "enrolled_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homeworksubmission",
+    "pk": 14,
+    "fields": {
+      "homework": 7,
+      "student": 9,
+      "text": "Решение ученика 9",
+      "submitted_at": "2026-11-13T10:00:00+03:00",
+      "grade": 5,
+      "teacher_comment": "Хорошо"
+    }
+  },
+  {
+    "model": "school.enrollment",
+    "pk": 15,
+    "fields": {
+      "student": 14,
+      "group": 4,
+      "enrolled_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homeworksubmission",
+    "pk": 15,
+    "fields": {
+      "homework": 7,
+      "student": 14,
+      "text": "Решение ученика 14",
+      "submitted_at": "2026-11-13T10:00:00+03:00",
+      "grade": 5,
+      "teacher_comment": "Хорошо"
+    }
+  },
+  {
+    "model": "school.enrollment",
+    "pk": 16,
+    "fields": {
+      "student": 19,
+      "group": 4,
+      "enrolled_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homeworksubmission",
+    "pk": 16,
+    "fields": {
+      "homework": 7,
+      "student": 19,
+      "text": "Решение ученика 19",
+      "submitted_at": "2026-11-13T10:00:00+03:00",
+      "grade": 5,
+      "teacher_comment": "Хорошо"
+    }
+  },
+  {
+    "model": "school.enrollment",
+    "pk": 17,
+    "fields": {
+      "student": 5,
+      "group": 5,
+      "enrolled_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homeworksubmission",
+    "pk": 17,
+    "fields": {
+      "homework": 9,
+      "student": 5,
+      "text": "Решение ученика 5",
+      "submitted_at": "2026-11-13T10:00:00+03:00",
+      "grade": 5,
+      "teacher_comment": "Хорошо"
+    }
+  },
+  {
+    "model": "school.enrollment",
+    "pk": 18,
+    "fields": {
+      "student": 10,
+      "group": 5,
+      "enrolled_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homeworksubmission",
+    "pk": 18,
+    "fields": {
+      "homework": 9,
+      "student": 10,
+      "text": "Решение ученика 10",
+      "submitted_at": "2026-11-13T10:00:00+03:00",
+      "grade": 5,
+      "teacher_comment": "Хорошо"
+    }
+  },
+  {
+    "model": "school.enrollment",
+    "pk": 19,
+    "fields": {
+      "student": 15,
+      "group": 5,
+      "enrolled_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homeworksubmission",
+    "pk": 19,
+    "fields": {
+      "homework": 9,
+      "student": 15,
+      "text": "Решение ученика 15",
+      "submitted_at": "2026-11-13T10:00:00+03:00",
+      "grade": 5,
+      "teacher_comment": "Хорошо"
+    }
+  },
+  {
+    "model": "school.enrollment",
+    "pk": 20,
+    "fields": {
+      "student": 20,
+      "group": 5,
+      "enrolled_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homeworksubmission",
+    "pk": 20,
+    "fields": {
+      "homework": 9,
+      "student": 20,
+      "text": "Решение ученика 20",
+      "submitted_at": "2026-11-13T10:00:00+03:00",
+      "grade": 5,
+      "teacher_comment": "Хорошо"
+    }
+  },
+  {
+    "model": "school.enrollment",
+    "pk": 21,
+    "fields": {
+      "student": 41,
+      "group": 6,
+      "enrolled_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homeworksubmission",
+    "pk": 21,
+    "fields": {
+      "homework": 11,
+      "student": 41,
+      "text": "Решение ученика 41",
+      "submitted_at": "2026-11-13T10:00:00+03:00",
+      "grade": 5,
+      "teacher_comment": "Хорошо"
+    }
+  },
+  {
+    "model": "school.enrollment",
+    "pk": 22,
+    "fields": {
+      "student": 37,
+      "group": 7,
+      "enrolled_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homeworksubmission",
+    "pk": 22,
+    "fields": {
+      "homework": 13,
+      "student": 37,
+      "text": "Решение ученика 37",
+      "submitted_at": "2026-11-13T10:00:00+03:00",
+      "grade": 5,
+      "teacher_comment": "Хорошо"
+    }
+  },
+  {
+    "model": "school.enrollment",
+    "pk": 23,
+    "fields": {
+      "student": 42,
+      "group": 7,
+      "enrolled_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homeworksubmission",
+    "pk": 23,
+    "fields": {
+      "homework": 13,
+      "student": 42,
+      "text": "Решение ученика 42",
+      "submitted_at": "2026-11-13T10:00:00+03:00",
+      "grade": 5,
+      "teacher_comment": "Хорошо"
+    }
+  },
+  {
+    "model": "school.enrollment",
+    "pk": 24,
+    "fields": {
+      "student": 38,
+      "group": 8,
+      "enrolled_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homeworksubmission",
+    "pk": 24,
+    "fields": {
+      "homework": 15,
+      "student": 38,
+      "text": "Решение ученика 38",
+      "submitted_at": "2026-11-13T10:00:00+03:00",
+      "grade": 5,
+      "teacher_comment": "Хорошо"
+    }
+  },
+  {
+    "model": "school.enrollment",
+    "pk": 25,
+    "fields": {
+      "student": 43,
+      "group": 8,
+      "enrolled_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homeworksubmission",
+    "pk": 25,
+    "fields": {
+      "homework": 15,
+      "student": 43,
+      "text": "Решение ученика 43",
+      "submitted_at": "2026-11-13T10:00:00+03:00",
+      "grade": 5,
+      "teacher_comment": "Хорошо"
+    }
+  },
+  {
+    "model": "school.enrollment",
+    "pk": 26,
+    "fields": {
+      "student": 39,
+      "group": 9,
+      "enrolled_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homeworksubmission",
+    "pk": 26,
+    "fields": {
+      "homework": 17,
+      "student": 39,
+      "text": "Решение ученика 39",
+      "submitted_at": "2026-11-13T10:00:00+03:00",
+      "grade": 5,
+      "teacher_comment": "Хорошо"
+    }
+  },
+  {
+    "model": "school.enrollment",
+    "pk": 27,
+    "fields": {
+      "student": 44,
+      "group": 9,
+      "enrolled_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homeworksubmission",
+    "pk": 27,
+    "fields": {
+      "homework": 17,
+      "student": 44,
+      "text": "Решение ученика 44",
+      "submitted_at": "2026-11-13T10:00:00+03:00",
+      "grade": 5,
+      "teacher_comment": "Хорошо"
+    }
+  },
+  {
+    "model": "school.enrollment",
+    "pk": 28,
+    "fields": {
+      "student": 40,
+      "group": 10,
+      "enrolled_at": "2026-11-13T10:00:00+03:00"
+    }
+  },
+  {
+    "model": "school.homeworksubmission",
+    "pk": 28,
+    "fields": {
+      "homework": 19,
+      "student": 40,
+      "text": "Решение ученика 40",
+      "submitted_at": "2026-11-13T10:00:00+03:00",
+      "grade": 5,
+      "teacher_comment": "Хорошо"
+    }
+  }
+]

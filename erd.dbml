@@ -1,0 +1,15 @@
+// Основные сущности, полный перечень атрибутов — в models.py и ER_diagram.png
+Table language { id integer [pk] name varchar [unique, not null] code varchar [unique, not null] }
+Table level { id integer [pk] language_id integer [ref: > language.id] code varchar rank integer indexes { (language_id, code) [unique] } }
+Table studentprofile { id integer [pk] user_id integer [unique] full_name varchar role varchar }
+Table studentlevel { id integer [pk] student_id integer [ref: > studentprofile.id] language_id integer [ref: > language.id] level_id integer [ref: > level.id] indexes { (student_id, language_id) [unique] } }
+Table entrancetest { id integer [pk] language_id integer [ref: > language.id] title varchar is_active boolean created_at datetime }
+Table testquestion { id integer [pk] test_id integer [ref: > entrancetest.id] text text correct_option varchar points integer position integer }
+Table scoreband { id integer [pk] test_id integer [ref: > entrancetest.id] level_id integer [ref: > level.id] min_points integer max_points integer }
+Table testresult { id integer [pk] test_id integer [ref: > entrancetest.id] student_id integer [ref: > studentprofile.id] level_id integer [ref: > level.id] score integer completed_at datetime }
+Table testanswer { id integer [pk] result_id integer [ref: > testresult.id] question_id integer [ref: > testquestion.id] selected_option varchar }
+Table studygroup { id integer [pk] language_id integer [ref: > language.id] level_id integer [ref: > level.id] teacher_id integer [ref: > studentprofile.id] title varchar capacity integer status varchar start_date date }
+Table groupschedule { id integer [pk] group_id integer [ref: > studygroup.id] weekday integer start_time time end_time time meeting_url varchar }
+Table enrollment { id integer [pk] student_id integer [ref: > studentprofile.id] group_id integer [ref: > studygroup.id] enrolled_at datetime indexes { (student_id, group_id) [unique] } }
+Table homework { id integer [pk] group_id integer [ref: > studygroup.id] title varchar description text deadline datetime }
+Table homeworksubmission { id integer [pk] homework_id integer [ref: > homework.id] student_id integer [ref: > studentprofile.id] text text submitted_at datetime grade integer teacher_comment text }
