@@ -1,3 +1,5 @@
+/* jshint esversion: 11 */
+/* global AbortController */
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.getElementById('menu-toggle');
   const nav = document.getElementById('main-nav');
