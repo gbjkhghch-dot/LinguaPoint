@@ -1,9 +1,12 @@
+import logging
 
 from django.contrib import messages
 from django.contrib.auth import login
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import AuthenticationForm
+from django.core.exceptions import PermissionDenied
 from django.core.paginator import Paginator
+from django.db import transaction, DatabaseError
 from django.db.models import Q, Count
 from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404, redirect
@@ -11,6 +14,9 @@ from django.views.decorators.http import require_GET
 
 from .models import Language, StudyGroup, StudentProfile, CourseApplication
 from .forms import ApplicationForm, ConsultationForm, RegisterForm, ProfileForm
+
+
+logger = logging.getLogger(__name__)
 
 
 def groups_filtered(request):
@@ -51,12 +57,21 @@ def home(request):
         form = ConsultationForm(request.POST)
 
         if form.is_valid():
-            form.save()
-            messages.success(
-                request,
-                'Спасибо! Мы свяжемся с вами.'
-            )
-            return redirect('home')
+            try:
+                with transaction.atomic():
+                    form.save()
+            except DatabaseError:
+                logger.exception('Ошибка сохранения консультации')
+                form.add_error(
+                    None,
+                    'Не удалось сохранить заявку. Попробуйте позже.'
+                )
+            else:
+                messages.success(
+                    request,
+                    'Спасибо! Мы свяжемся с вами.'
+                )
+                return redirect('home')
     else:
         form = ConsultationForm()
 
@@ -105,20 +120,23 @@ def course(request, pk):
 
 
 def apply(request, pk):
-   
     group = get_object_or_404(StudyGroup, pk=pk)
 
     occupied = group.enrollments.count()
 
     if occupied >= group.capacity:
+        logger.info(
+            'Попытка записи в заполненную группу: %s',
+            pk
+        )
 
         messages.warning(
             request,
             'В группе нет свободных мест.'
         )
+
         return redirect('course', pk=pk)
 
-    
     if request.user.is_authenticated:
         already_applied = CourseApplication.objects.filter(
             user=request.user,
@@ -126,32 +144,52 @@ def apply(request, pk):
         ).exists()
 
         if already_applied:
+            logger.warning(
+                'Повторная заявка: пользователь %s, группа %s',
+                request.user.pk,
+                pk
+            )
+
             messages.warning(
                 request,
                 'Вы уже подали заявку на этот курс.'
             )
+
             return redirect('course', pk=pk)
 
     form = ApplicationForm(request.POST or None)
 
     if request.method == 'POST' and form.is_valid():
-        item = form.save(commit=False)
-        item.group = group
+        try:
+            with transaction.atomic():
+                item = form.save(commit=False)
+                item.group = group
 
-        if request.user.is_authenticated:
-            item.user = request.user
+                if request.user.is_authenticated:
+                    item.user = request.user
 
-        item.save()
+                item.save()
 
-        messages.success(
-            request,
-            f'Заявка {item} успешно отправлена.'
-        )
+        except DatabaseError:
+            logger.exception(
+                'Ошибка сохранения заявки на курс'
+            )
 
-        return redirect(
-            'application_success',
-            pk=item.pk
-        )
+            form.add_error(
+                None,
+                'Не удалось сохранить заявку. Попробуйте позже.'
+            )
+
+        else:
+            messages.success(
+                request,
+                f'Заявка {item} успешно отправлена.'
+            )
+
+            return redirect(
+                'application_success',
+                pk=item.pk
+            )
 
     return render(request, 'school/form.html', {
         'form': form,
@@ -166,13 +204,26 @@ def application_success(request, pk):
         pk=pk
     )
 
+    # Для гостевой заявки показываем только
+    # общее подтверждение без персональных данных.
+    if item.user_id is None:
+        return render(request, 'school/success.html', {
+            'heading': 'Заявка отправлена'
+        })
+
+    # Запрещаем просмотр чужих заявок.
     if not (
         request.user.is_authenticated
         and item.user_id == request.user.pk
     ):
-        return render(request, 'school/success.html', {
-            'heading': 'Заявка отправлена'
-        })
+        logger.warning(
+            'Попытка доступа к чужой заявке: %s',
+            pk
+        )
+
+        raise PermissionDenied(
+            'У вас нет прав для просмотра этой заявки.'
+        )
 
     return render(request, 'school/success.html', {
         'heading': 'Заявка отправлена',
@@ -209,15 +260,33 @@ def register(request):
     form = RegisterForm(request.POST or None)
 
     if request.method == 'POST' and form.is_valid():
-        user = form.save()
-        login(request, user, backend='django.contrib.auth.backends.ModelBackend')
+        try:
+            with transaction.atomic():
+                user = form.save()
 
-        messages.success(
-            request,
-            'Аккаунт создан.'
-        )
+        except DatabaseError:
+            logger.exception(
+                'Ошибка создания аккаунта'
+            )
 
-        return redirect('account')
+            form.add_error(
+                None,
+                'Не удалось создать аккаунт. Попробуйте позже.'
+            )
+
+        else:
+            login(
+                request,
+                user,
+                backend='django.contrib.auth.backends.ModelBackend'
+            )
+
+            messages.success(
+                request,
+                'Аккаунт создан.'
+            )
+
+            return redirect('account')
 
     return render(request, 'school/form.html', {
         'form': form,
@@ -259,14 +328,27 @@ def account(request):
     )
 
     if request.method == 'POST' and form.is_valid():
-        form.save()
+        try:
+            with transaction.atomic():
+                form.save()
 
-        messages.success(
-            request,
-            'Профиль сохранён.'
-        )
+        except DatabaseError:
+            logger.exception(
+                'Ошибка сохранения профиля'
+            )
 
-        return redirect('account')
+            form.add_error(
+                None,
+                'Не удалось сохранить профиль. Попробуйте позже.'
+            )
+
+        else:
+            messages.success(
+                request,
+                'Профиль сохранён.'
+            )
+
+            return redirect('account')
 
     applications = (
         CourseApplication.objects
