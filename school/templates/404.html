@@ -1,0 +1,24 @@
+{% extends "school/base.html" %}
+
+{% block title %}404 — Страница не найдена{% endblock %}
+
+{% block content %}
+<section class="container" style="padding: 80px 20px; text-align: center;">
+    <h1 style="font-size: 80px; color: #204bb5;">404</h1>
+
+    <h2>Страница не найдена</h2>
+
+    <p>Запрашиваемая страница не существует
+       или была удалена.</p>
+
+    <p>Проверьте адрес или воспользуйтесь поиском.</p>
+
+    <a class="btn" href="{% url 'home' %}">
+        На главную
+    </a>
+
+    <a class="btn" href="{% url 'search' %}">
+        Поиск курсов
+    </a>
+</section>
+{% endblock %}

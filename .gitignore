@@ -7,3 +7,7 @@ django_db.sqlite3
 .env
 media/
 .vscode/
+# Local test data and backups
+test_db.sqlite3
+backups/
+LinguaPoint_source.zip

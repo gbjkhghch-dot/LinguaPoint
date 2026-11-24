@@ -23,6 +23,19 @@ class ApplicationForm(forms.ModelForm):
         v=self.cleaned_data['consent']
         if not v:raise forms.ValidationError('Необходимо согласие на обработку данных.')
         return v
+    def clean(self):
+        cleaned_data = super().clean()
+        phone = cleaned_data.get('phone')
+        email = cleaned_data.get('email')
+
+        if not phone and not email:
+            raise forms.ValidationError(
+                'Укажите контактные данные для связи.'
+            )
+
+        return cleaned_data
+    
+        
 
 class ConsultationForm(forms.ModelForm):
     class Meta:

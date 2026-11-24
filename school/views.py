@@ -105,19 +105,32 @@ def course(request, pk):
 
 
 def apply(request, pk):
-    group = get_object_or_404(
-        StudyGroup.objects.annotate(
-            occupied=Count('enrollments')
-        ),
-        pk=pk
-    )
+   
+    group = get_object_or_404(StudyGroup, pk=pk)
 
-    if group.occupied >= group.capacity:
+    occupied = group.enrollments.count()
+
+    if occupied >= group.capacity:
+
         messages.warning(
             request,
             'В группе нет свободных мест.'
         )
         return redirect('course', pk=pk)
+
+    
+    if request.user.is_authenticated:
+        already_applied = CourseApplication.objects.filter(
+            user=request.user,
+            group=group
+        ).exists()
+
+        if already_applied:
+            messages.warning(
+                request,
+                'Вы уже подали заявку на этот курс.'
+            )
+            return redirect('course', pk=pk)
 
     form = ApplicationForm(request.POST or None)
 
@@ -197,7 +210,7 @@ def register(request):
 
     if request.method == 'POST' and form.is_valid():
         user = form.save()
-        login(request, user)
+        login(request, user, backend='django.contrib.auth.backends.ModelBackend')
 
         messages.success(
             request,
